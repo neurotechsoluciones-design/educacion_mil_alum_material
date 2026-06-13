@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+
+<html class="scroll-smooth" lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroTech Soluciones | Recursos de Clase</title>
-  
-  <!-- Fuentes de NeuroTech -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  
-  <!-- Iconos -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  
-  <!-- Librería para generar PDF -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NeuroTech Soluciones | IA Aplicada a la Educación</title>
+<!-- Fuentes de NeuroTech -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<!-- Iconos -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<!-- Librería para generar PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -69,8 +66,7 @@
       }
     }
   </script>
-
-  <style>
+<style>
     body {
       background-color: #020202;
       color: #ffffff;
@@ -240,893 +236,811 @@
   </style>
 </head>
 <body class="min-h-screen pb-20 selection:bg-neuro-green selection:text-black relative">
-
-  <!-- Background Grid Overlay -->
-  <div class="fixed inset-0 bg-grid-pattern pointer-events-none z-[-1]"></div>
-  <div class="fixed inset-0 bg-gradient-to-b from-transparent via-neuro-black/50 to-neuro-black pointer-events-none z-[-1]"></div>
-
-  <!-- Header / Hero Section (Full Width Image) -->
-  <header class="w-full max-w-7xl mx-auto pt-6 px-4 mb-4 relative z-10">
-      <div class="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(154,255,95,0.1)] border border-white/10 relative group">
-          <!-- IMAGEN PORTADA FULL WIDTH -->
-          <img src="https://raw.githubusercontent.com/neurotechsoluciones-design/neurotech-assets/main/militar_Portada_horizantal_IIFA.png" 
-               alt="NeuroTech Portada" 
-               class="w-full h-auto object-cover block">
-          
-          <!-- Overlay sutil opcional (para que el botón resalte más si es necesario) -->
-          <div class="absolute inset-0 bg-black/10"></div>
-
-          <!-- Badge En Vivo (Flotando sobre la imagen) -->
-          <div class="absolute top-4 right-4 md:top-8 md:right-8">
-            <span class="flex items-center gap-2 px-3 py-1 rounded-full border border-neuro-blue/50 bg-black/60 backdrop-blur-md text-[10px] font-orbitron text-neuro-blue-light font-bold tracking-widest shadow-[0_0_15px_rgba(33,0,229,0.4)]">
-              <span class="w-1.5 h-1.5 rounded-full bg-neuro-blue animate-pulse"></span>
+<!-- Background Grid Overlay -->
+<div class="fixed inset-0 bg-grid-pattern pointer-events-none z-[-1]"></div>
+<div class="fixed inset-0 bg-gradient-to-b from-transparent via-neuro-black/50 to-neuro-black pointer-events-none z-[-1]"></div>
+<!-- Header / Hero Section (Full Width Image) -->
+<header class="w-full max-w-7xl mx-auto pt-6 px-4 mb-4 relative z-10">
+<div class="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(154,255,95,0.1)] border border-white/10 relative group">
+<!-- IMAGEN PORTADA FULL WIDTH -->
+<img alt="NeuroTech Portada" class="w-full h-auto object-cover block" src="https://raw.githubusercontent.com/neurotechsoluciones-design/neurotech-assets/main/militar_Portada_horizantal_IIFA.png"/>
+<!-- Overlay sutil opcional (para que el botón resalte más si es necesario) -->
+<div class="absolute inset-0 bg-black/10"></div>
+<!-- Badge En Vivo (Flotando sobre la imagen) -->
+<div class="absolute top-4 right-4 md:top-8 md:right-8">
+<span class="flex items-center gap-2 px-3 py-1 rounded-full border border-neuro-blue/50 bg-black/60 backdrop-blur-md text-[10px] font-orbitron text-neuro-blue-light font-bold tracking-widest shadow-[0_0_15px_rgba(33,0,229,0.4)]">
+<span class="w-1.5 h-1.5 rounded-full bg-neuro-blue animate-pulse"></span>
               EN VIVO
             </span>
-          </div>
-      </div>
-  </header>
-
-  <!-- Contenido Principal -->
-  <main class="max-w-3xl mx-auto px-4 space-y-12">
-
-    <!-- INTRODUCCIÓN GENERAL -->
-    <div class="text-center pt-4">
-      <div class="inline-block mb-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-[10px] text-gray-400 font-orbitron tracking-widest uppercase">
+</div>
+</div>
+</header>
+<!-- Contenido Principal -->
+<main class="max-w-3xl mx-auto px-4 space-y-12">
+<!-- INTRODUCCIÓN GENERAL -->
+<div class="text-center pt-4">
+<div class="inline-block mb-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-[10px] text-gray-400 font-orbitron tracking-widest uppercase">
         Material Exclusivo
       </div>
-      
-      <div class="flex flex-col items-center justify-center mb-6">
-        <div class="text-2xl md:text-4xl font-orbitron font-black tracking-tight text-center min-h-[5rem] leading-tight px-2 max-w-4xl mx-auto">
-            <span id="typewriter-text"></span><span class="cursor-bar"></span>
-        </div>
-      </div>
-
-      <p class="text-gray-400 max-w-lg mx-auto text-sm leading-relaxed mb-8">
-        Domina la comunicación con la IA utilizando las estructuras profesionales.
+<div class="flex flex-col items-center justify-center mb-6">
+<div class="text-2xl md:text-4xl font-orbitron font-black tracking-tight text-center min-h-[5rem] leading-tight px-2 max-w-4xl mx-auto">
+<span id="typewriter-text"></span><span class="cursor-bar"></span>
+</div>
+</div>
+<p class="text-gray-400 max-w-lg mx-auto text-sm leading-relaxed mb-8">
+        Curso de IA aplicada a la educación: recursos, estructuras y prompts listos para usar.
       </p>
-
-      <button onclick="downloadPDF(this)" 
-              class="group relative inline-flex items-center gap-3 px-8 py-3 bg-white/5 border border-white/10 text-gray-200 font-orbitron font-bold text-sm rounded-xl hover:bg-neuro-green hover:text-black hover:border-neuro-green transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_30px_rgba(154,255,95,0.6)] backdrop-blur-md">
-        <i data-lucide="file-down" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
-        <span>DESCARGAR GUÍA PDF</span>
-        <span class="absolute right-3 opacity-0 group-[.loading]:opacity-100 group-[.loading]:right-4 transition-all">
-             <i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i>
-        </span>
-      </button>
-    </div>
-
-    <!-- NAVEGACIÓN DE PESTAÑAS (TABS) -->
-    <div class="flex justify-center border-b border-white/10 mb-8 overflow-x-auto">
-        <div class="flex space-x-2 md:space-x-8">
-            <button onclick="switchTab('bloque1')" id="tab-bloque1" class="tab-btn active px-6 py-4 font-orbitron text-sm font-bold text-gray-400 hover:text-white border-b-2 border-transparent focus:outline-none whitespace-nowrap">
+<button class="group relative inline-flex items-center gap-3 px-8 py-3 bg-white/5 border border-white/10 text-gray-200 font-orbitron font-bold text-sm rounded-xl hover:bg-neuro-green hover:text-black hover:border-neuro-green transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_30px_rgba(154,255,95,0.6)] backdrop-blur-md" onclick="downloadPDF(this)">
+<i class="w-5 h-5 group-hover:scale-110 transition-transform" data-lucide="file-down"></i>
+<span>DESCARGAR GUÍA PDF</span>
+<span class="absolute right-3 opacity-0 group-[.loading]:opacity-100 group-[.loading]:right-4 transition-all">
+<i class="w-4 h-4 animate-spin" data-lucide="loader-2"></i>
+</span>
+</button>
+</div>
+<!-- NAVEGACIÓN DE PESTAÑAS (TABS) -->
+<div class="flex justify-center border-b border-white/10 mb-8 overflow-x-auto">
+<div class="flex space-x-2 md:space-x-8">
+<button class="tab-btn active px-6 py-4 font-orbitron text-sm font-bold text-gray-400 hover:text-white border-b-2 border-transparent focus:outline-none whitespace-nowrap" id="tab-bloque1" onclick="switchTab('bloque1')">
                 BLOQUE 1
             </button>
-            <button onclick="switchTab('bloque2')" id="tab-bloque2" class="tab-btn px-6 py-4 font-orbitron text-sm font-bold text-gray-400 hover:text-white border-b-2 border-transparent focus:outline-none whitespace-nowrap">
+<button class="tab-btn px-6 py-4 font-orbitron text-sm font-bold text-gray-400 hover:text-white border-b-2 border-transparent focus:outline-none whitespace-nowrap" id="tab-bloque2" onclick="switchTab('bloque2')">
                 BLOQUE 2
             </button>
-            <button onclick="switchTab('bloque3')" id="tab-bloque3" class="tab-btn px-6 py-4 font-orbitron text-sm font-bold text-gray-400 hover:text-white border-b-2 border-transparent focus:outline-none whitespace-nowrap">
+<button class="tab-btn px-6 py-4 font-orbitron text-sm font-bold text-gray-400 hover:text-white border-b-2 border-transparent focus:outline-none whitespace-nowrap" id="tab-bloque3" onclick="switchTab('bloque3')">
                 BLOQUE 3
             </button>
-        </div>
-    </div>
+</div>
+</div>
+<!-- CONTENIDO BLOQUE 1: ESTRUCTURAS BASE -->
+<div class="space-y-12 animate-fade-in-up" id="content-bloque1">
+<!-- ENCABEZADO BLOQUE 1 -->
+<div class="border-b border-neuro-green/30 pb-4 mb-8">
+<h2 class="text-3xl font-orbitron font-bold text-white tracking-wide flex items-center gap-3">
+<span class="text-neuro-green">01.</span> ESTRUCTURAS BASE
+            </h2>
+<p class="text-gray-400 text-sm mt-2">
+                Orden sugerido para trabajar con ChatGPT: primero configurá el estilo de respuesta, después abrí ChatGPT, luego aplicá la fórmula R.C.I. y, si necesitás ayuda, usá el GPT Creador de Prompt.
+            </p>
+</div>
+<!-- 01 PERSONALIZACIÓN SIMPLE -->
+<article class="glass-panel rounded-3xl relative group overflow-hidden border border-white/5">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-green to-neuro-blue opacity-10 group-hover:opacity-20 transition duration-500 pointer-events-none"></div>
+<div class="grid grid-cols-1 md:grid-cols-5 h-full relative z-10">
+<div class="md:col-span-2 h-48 md:h-full bg-neuro-dark border-b md:border-b-0 md:border-r border-white/10 overflow-hidden relative">
+<img alt="Personalización de ChatGPT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://raw.githubusercontent.com/neurotechsoluciones-design/neurotech-assets/main/personalizacion.png"/>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="bg-neuro-green/10 border border-neuro-green/30 text-neuro-green font-orbitron font-bold text-[10px] px-3 py-1 rounded-full tracking-wider shadow-lg backdrop-blur-md">PASO 01</span>
+<h3 class="text-2xl font-orbitron font-bold text-white mt-3 drop-shadow-md">Personalización Simple</h3>
+</div>
+</div>
+<div class="md:col-span-3 p-6 md:p-8 bg-neuro-dark/90 flex flex-col">
+<div class="mb-6 bg-white/5 rounded-xl p-4 border border-white/5">
+<h4 class="text-xs font-bold text-neuro-green uppercase tracking-wider mb-2 flex items-center gap-2">
+<i class="w-4 h-4" data-lucide="target"></i> Propósito del prompt
+                        </h4>
+<p class="text-sm text-gray-300 font-light">
+                            Este prompt configura el comportamiento inicial de ChatGPT. Sirve para pedir respuestas claras, críticas y útiles antes de trabajar con contenidos educativos o profesionales.
+                        </p>
+</div>
+<div class="mb-6 grid grid-cols-1 md:grid-cols-3 gap-3">
+<div class="bg-black/30 rounded-lg p-3 border border-white/5">
+<p class="text-[10px] text-neuro-green font-bold uppercase tracking-wide mb-1">Cuándo usarlo</p>
+<p class="text-xs text-gray-400">Al iniciar una conversación nueva o antes de una tarea importante.</p>
+</div>
+<div class="bg-black/30 rounded-lg p-3 border border-white/5">
+<p class="text-[10px] text-neuro-green font-bold uppercase tracking-wide mb-1">Qué logra</p>
+<p class="text-xs text-gray-400">Respuestas más directas, con menos relleno y mejor criterio.</p>
+</div>
+<div class="bg-black/30 rounded-lg p-3 border border-white/5">
+<p class="text-[10px] text-neuro-green font-bold uppercase tracking-wide mb-1">Error que evita</p>
+<p class="text-xs text-gray-400">Que la IA te dé la razón sin analizar o responda de forma genérica.</p>
+</div>
+</div>
+<div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner flex-grow">
+<div id="prompt-content-1">
+<div class="mb-4">No quiero que siempre me valides todo lo que diga. Quiero que seas crítico conmigo en los momentos que sea necesario, que seas asertivo y que no me des la razón simplemente por dármela. Tomate el tiempo que necesites para razonar. Nunca uses guiones largos. Nunca uses la palabra prohibida que te indique.</div>
+<div class="mb-2"><strong class="text-neuro-green">## Personalización</strong></div>
+<div class="mb-4">Actuá como mi socio/a estratégico/a y ejecutor/a.</div>
+<div class="mb-2"><strong class="text-neuro-green">## Reglas de comunicación</strong></div>
+<div class="mb-4">
+<div class="pl-2 border-l border-gray-700 hover:border-neuro-green/50 transition-colors">- No me valides por default. Si algo está flojo o es mala idea, decímelo directo y proponé una alternativa mejor.</div>
+<div class="pl-2 border-l border-gray-700 hover:border-neuro-green/50 transition-colors mt-1">- Sé asertivo/a, claro/a y práctico/a. Sin relleno.</div>
+<div class="pl-2 border-l border-gray-700 hover:border-neuro-green/50 transition-colors mt-1">- Tomate el tiempo de razonar, pero entregá conclusiones y pasos. No muestres tu razonamiento interno.</div>
+<div class="pl-2 border-l border-gray-700 hover:border-neuro-green/50 transition-colors mt-1">- Si faltan datos críticos, pedime solo lo mínimo indispensable.</div>
+</div>
+<div class="mb-2"><strong class="text-neuro-green">## Calidad y precisión</strong></div>
+<div>
+<div class="pl-2 border-l border-gray-700 hover:border-neuro-green/50 transition-colors">- Priorizá exactitud por sobre velocidad.</div>
+<div class="pl-2 border-l border-gray-700 hover:border-neuro-green/50 transition-colors mt-1">- Si hay riesgo de error en fechas, precios, normas o actualidad, verificá con web y citá fuentes.</div>
+<div class="pl-2 border-l border-gray-700 hover:border-neuro-green/50 transition-colors mt-1">- Si no se puede asegurar algo, decilo y ofrecé 2 opciones con pros y contras.</div>
+</div>
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<button class="btn-cyber group/btn flex items-center justify-center gap-3 bg-neuro-green text-black font-orbitron font-bold py-3 px-8 rounded-xl hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(154,255,95,0.3)] w-full sm:w-auto" onclick="copyToClipboard('prompt-content-1', this)">
+<i class="w-4 h-4 group-hover/btn:scale-110 transition-transform" data-lucide="copy"></i>
+<span>COPIAR</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- 02 ACCESO A CHATGPT -->
+<article class="glass-panel rounded-3xl p-6 md:p-8 border border-white/5 relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-r from-white/[0.03] to-neuro-blue/[0.04] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-8">
+<div class="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-white flex items-center justify-center p-3 border border-black/10 shadow-[0_10px_30px_rgba(255,255,255,0.08)] flex-shrink-0">
+<img alt="Logo de ChatGPT" class="w-full h-full object-contain" src="https://images.ctfassets.net/j22is2dtoxu1/intercom-img-d177d076c9a5453052925143/49d5d812b0a6fcc20a14faa8c629d9fb/icon-ios-1024_401x.png"/>
+</div>
+<div class="flex-1 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] text-white font-orbitron tracking-widest uppercase mb-3">Paso 02</div>
+<h3 class="text-xl md:text-2xl font-orbitron font-bold text-white">Copiá el prompt y abrí ChatGPT</h3>
+<p class="text-sm text-gray-400 mt-3 leading-relaxed max-w-2xl">
+                        Primero copiá la personalización. Después abrí ChatGPT y pegala al iniciar la conversación. Desde celular te dirige a la tienda correspondiente y desde computadora abre la versión web.
+                    </p>
+</div>
+<div class="w-full md:w-auto">
+<a class="btn-cyber flex items-center justify-center gap-3 bg-white text-black font-orbitron font-bold py-3 px-8 rounded-xl hover:bg-neuro-green transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.12)] w-full md:w-auto" href="#" id="abrir-chatgpt" onclick="openChatGPTUniversal(event)">
+<i class="w-4 h-4" data-lucide="bot"></i>
+<span>ABRIR CHATGPT</span>
+</a>
+</div>
+</div>
+</article>
+<!-- 03 INGENIERÍA DE PROMPT -->
+<article class="glass-panel rounded-3xl p-1 relative group">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-green to-neuro-blue opacity-10 group-hover:opacity-30 rounded-3xl blur transition duration-500"></div>
+<div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="bg-neuro-green/10 border border-neuro-green/30 text-neuro-green font-orbitron font-bold text-[10px] px-3 py-1 rounded-full tracking-wider">PASO 03</span>
+<h3 class="text-xl font-orbitron font-bold text-white tracking-wide">El arte de pedir: ingeniería de prompt</h3>
+</div>
+<div class="space-y-4 text-sm text-gray-300 font-light mb-8">
+<p>La calidad de la respuesta depende de la calidad del pedido. No es magia ni suerte: es método.</p>
+<p>A esta habilidad la llamamos <strong class="text-neuro-green font-medium">Ingeniería de Prompt</strong>. Consiste en diseñar con precisión qué querés obtener, para qué lo necesitás y cómo debe entregarse.</p>
+</div>
+<div class="bg-black/80 rounded-xl border border-white/5 p-6 shadow-inner">
+<h4 class="text-lg font-orbitron font-bold text-white mb-3">Ejemplo rápido</h4>
+<div class="font-mono text-sm leading-relaxed" id="prompt-content-fase1">
+<div class="mb-4 bg-red-900/10 border border-red-500/20 p-4 rounded-lg">
+<div class="text-red-400 font-bold mb-1">Prompt débil:</div>
+<div class="text-gray-300">"Explícame sobre inteligencia artificial."</div>
+</div>
+<div class="mb-2 text-center text-gray-500 font-bold text-xs uppercase tracking-widest">VS</div>
+<div class="mb-4 bg-neuro-green/5 border border-neuro-green/20 p-4 rounded-lg">
+<div class="text-neuro-green font-bold mb-1">Prompt fuerte:</div>
+<div class="text-gray-300">"Explícame qué es la inteligencia artificial en lenguaje simple, con ejemplos cotidianos y una analogía fácil de recordar."</div>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-white/10 text-xs text-center text-gray-400 italic">La diferencia no está solo en la IA. Está en la precisión del pedido.</div>
+</div>
+</div>
+</div>
+</article>
+<!-- 04 FORMULA RCI -->
+<section class="glass-panel rounded-3xl p-8 border border-white/5 relative overflow-hidden group">
+<div class="absolute -right-20 -top-20 w-60 h-60 bg-neuro-blue rounded-full filter blur-[100px] opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
+<div class="flex items-center gap-4 mb-8 relative z-10">
+<div class="bg-black/50 p-3 rounded-xl border border-neuro-blue/30 shadow-[0_0_15px_rgba(33,0,229,0.2)]">
+<i class="text-neuro-green w-6 h-6" data-lucide="brain-circuit"></i>
+</div>
+<div>
+<h3 class="text-2xl font-orbitron font-bold text-white">PASO 04: LA FÓRMULA R.C.I.</h3>
+<p class="text-[10px] text-neuro-green font-orbitron uppercase tracking-[0.2em]">Rol + Contexto + Instrucción</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+<div class="group/card bg-black/40 border border-white/5 rounded-2xl p-6 hover:bg-neuro-green/5 transition-all hover:border-neuro-green/30 flex flex-col">
+<div class="text-neuro-green font-orbitron font-bold text-lg mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-lg bg-neuro-green/10 flex items-center justify-center text-sm">R</span>ROL</div>
+<p class="text-xs text-gray-300 leading-relaxed font-light flex-grow">Define desde qué perspectiva debe responder la IA: docente, especialista, tutor, diseñador instruccional, asesor pedagógico o el rol que necesites.</p>
+<div class="mt-4 bg-white/5 border border-white/10 rounded-lg p-3"><p class="text-[10px] text-white italic">Ejemplo: "Actúa como docente de secundaria especializado en tecnología educativa."</p></div>
+</div>
+<div class="group/card bg-black/40 border border-white/5 rounded-2xl p-6 hover:bg-neuro-blue/5 transition-all hover:border-neuro-blue/30 flex flex-col">
+<div class="text-blue-400 font-orbitron font-bold text-lg mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-lg bg-neuro-blue/10 flex items-center justify-center text-sm">C</span>CONTEXTO</div>
+<p class="text-xs text-gray-300 leading-relaxed font-light flex-grow">Explica la situación: audiencia, edad, nivel, objetivo, materia, duración, formato de clase y condiciones de aplicación.</p>
+<div class="mt-4 bg-white/5 border border-white/10 rounded-lg p-3"><p class="text-[10px] text-white italic">Ejemplo: "El plan es para estudiantes de 15 años sin conocimientos previos."</p></div>
+</div>
+<div class="group/card bg-black/40 border border-white/5 rounded-2xl p-6 hover:bg-neuro-green/5 transition-all hover:border-neuro-green/30 flex flex-col">
+<div class="text-neuro-green font-orbitron font-bold text-lg mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-lg bg-neuro-green/10 flex items-center justify-center text-sm">I</span>INSTRUCCIÓN</div>
+<p class="text-xs text-gray-300 leading-relaxed font-light flex-grow">Indica exactamente qué debe producir la IA y en qué formato: tabla, plan, rúbrica, actividad, explicación, evaluación o secuencia.</p>
+<div class="mt-4 bg-neuro-green/10 border border-neuro-green/20 rounded-lg p-3"><p class="text-[10px] text-white italic">Ejemplo: "Diseña una clase de 40 minutos con objetivo, actividad práctica y cierre reflexivo."</p></div>
+</div>
+</div>
+</section>
+<!-- GPT CREADOR DE PROMPT -->
+<article class="glass-panel rounded-3xl p-1 relative group">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-green to-neuro-blue opacity-10 group-hover:opacity-30 rounded-3xl blur transition duration-500"></div>
+<div class="relative bg-neuro-dark/95 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-center relative z-10">
+<div class="md:col-span-2 rounded-2xl overflow-hidden border border-white/10 bg-black/40">
+<img alt="GPT Creador de Prompt" class="w-full h-auto object-cover" src="data:image/webp;base64,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"/>
+</div>
+<div class="md:col-span-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neuro-green/30 bg-neuro-green/10 text-[10px] text-neuro-green font-orbitron tracking-widest uppercase mb-4">Recurso recomendado</div>
+<h3 class="text-2xl font-orbitron font-bold text-white mb-4">GPT Creador de Prompt</h3>
+<p class="text-sm text-gray-300 leading-relaxed mb-4">
+                            Después de entender R.C.I., podés usar este GPT como apoyo para transformar una idea desordenada en un prompt más claro. Te ayuda a definir rol, contexto, instrucciones, formato de salida y restricciones.
+                        </p>
+<p class="text-xs text-gray-500 leading-relaxed mb-6">
+                            No reemplaza tu criterio: usalo para ordenar el pedido y después ajustalo según tu objetivo educativo o profesional.
+                        </p>
+<a class="btn-cyber inline-flex items-center justify-center gap-3 bg-neuro-green text-black font-orbitron font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(154,255,95,0.3)] w-full sm:w-auto" href="https://chatgpt.com/g/g-69dd19b515a0819196d6f16012970538-creador-de-prompt" target="_blank">
+<i class="w-4 h-4" data-lucide="sparkles"></i>
+<span>ABRIR GPT CREADOR DE PROMPT</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- 05 EJEMPLO PRACTICO RCI -->
 
-    <!-- CONTENIDO BLOQUE 1 (Totalmente renovado) -->
-    <div id="content-bloque1" class="space-y-12 animate-fade-in-up">
-        
-        <!-- FASE 1: EL ARTE DE PEDIR -->
-        <article class="glass-panel rounded-3xl p-1 relative group">
-          <div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-green to-neuro-blue opacity-10 group-hover:opacity-30 rounded-3xl blur transition duration-500"></div>
-          
-          <div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
-            <div class="relative z-10">
-              <div class="flex items-center gap-3 mb-6">
-                <span class="bg-neuro-green/10 border border-neuro-green/30 text-neuro-green font-orbitron font-bold text-[10px] px-3 py-1 rounded-full tracking-wider">
-                  FASE 1
-                </span>
-                <h3 class="text-xl font-orbitron font-bold text-white tracking-wide">El Arte de Pedir: La Ingeniería de Prompt</h3>
-              </div>
-              
-              <div class="space-y-4 text-sm text-gray-300 font-light mb-8">
-                <p>Si ChatGPT es un motor de generación, entonces hay una verdad incómoda que debes aceptar: <strong class="text-white font-medium">La calidad de la respuesta depende de la calidad del pedido.</strong></p>
-                <p>No es magia. No es suerte. Es método.</p>
-                <p>A esta habilidad la llamamos <strong class="text-neuro-green font-medium">Ingeniería de Prompt</strong>. No se trata de “preguntar mejor”. Se trata de diseñar estratégicamente lo que quieres obtener. Responde exactamente a lo que recibe.</p>
-                <p class="text-white">Y aquí es donde la mayoría falla.</p>
-              </div>
-
-              <div class="bg-black/80 rounded-xl border border-white/5 p-6 shadow-inner">
-                <h4 class="text-lg font-orbitron font-bold text-white mb-3">¿Qué es un Prompt?</h4>
-                <p class="text-sm text-gray-300 font-light mb-5">
-                  Un prompt es simplemente el mensaje que le das a la Inteligencia Artificial. Pero no todos los prompts son iguales. Mira la diferencia:
-                </p>
-
-                <div id="prompt-content-fase1" class="font-mono text-sm leading-relaxed">
-                    <div class="mb-4 bg-red-900/10 border border-red-500/20 p-4 rounded-lg">
-                        <div class="text-red-400 font-bold mb-1"><i data-lucide="x-circle" class="w-4 h-4 inline mb-1 mr-1"></i>❌ Prompt Débil:</div>
-                        <div class="text-gray-300">"Explícame sobre inteligencia artificial."</div>
-                    </div>
-                    
-                    <div class="mb-2 text-center text-gray-500 font-bold text-xs uppercase tracking-widest">VS</div>
-
-                    <div class="mb-4 bg-neuro-green/5 border border-neuro-green/20 p-4 rounded-lg">
-                        <div class="text-neuro-green font-bold mb-1"><i data-lucide="check-circle-2" class="w-4 h-4 inline mb-1 mr-1"></i>✅ Prompt Fuerte:</div>
-                        <div class="text-gray-300">"Explícame qué es la inteligencia artificial en lenguaje simple, con ejemplos cotidianos y una analogía fácil de recordar."</div>
-                    </div>
-                </div>
-
-                <div class="mt-4 pt-4 border-t border-white/10 text-xs text-center text-gray-400 italic">
-                    La diferencia no está en la IA. Está en la precisión del pedido.
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- FASE 2: RCI -->
-        <section class="glass-panel rounded-3xl p-8 border border-white/5 relative overflow-hidden group">
-            <div class="absolute -right-20 -top-20 w-60 h-60 bg-neuro-blue rounded-full filter blur-[100px] opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
-
-            <div class="flex items-center gap-4 mb-8 relative z-10">
-                <div class="bg-black/50 p-3 rounded-xl border border-neuro-blue/30 shadow-[0_0_15px_rgba(33,0,229,0.2)]">
-                    <i data-lucide="brain-circuit" class="text-neuro-green w-6 h-6"></i>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-orbitron font-bold text-white">FASE 2: LA FÓRMULA R.C.I.</h3>
-                    <p class="text-[10px] text-neuro-green font-orbitron uppercase tracking-[0.2em]">Estructura esencial de un prompt</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
-                <!-- ROL -->
-                <div class="group/card bg-black/40 border border-white/5 rounded-2xl p-6 hover:bg-neuro-green/5 transition-all hover:border-neuro-green/30 flex flex-col">
-                    <div class="text-neuro-green font-orbitron font-bold text-lg mb-4 flex items-center gap-3">
-                        <span class="w-8 h-8 rounded-lg bg-neuro-green/10 flex items-center justify-center text-sm shadow-[0_0_10px_rgba(154,255,95,0.2)]">1</span>
-                        ROL
-                    </div>
-                    <div class="text-xs text-gray-300 leading-relaxed font-light space-y-3 flex-grow">
-                        <p class="font-medium text-white">¿Desde qué perspectiva debe responder?</p>
-                        <p>La IA “sabe” de todo. Pero si no le dices quién debe ser, responderá de forma genérica.</p>
-                        <p>Definir el rol significa indicarle:</p>
-                        <ul class="list-disc pl-4 space-y-1 text-gray-400">
-                            <li>Qué profesional debe representar.</li>
-                            <li>Qué enfoque debe adoptar.</li>
-                            <li>Qué nivel técnico utilizar.</li>
-                        </ul>
-                    </div>
-                    <div class="mt-4 bg-white/5 border border-white/10 rounded-lg p-3">
-                        <p class="text-[10px] text-white italic">Ej: "Actúa como un docente universitario." o "Actúa como un instructor técnico especializado en logística operativa."</p>
-                    </div>
-                    <p class="text-xs text-neuro-green mt-3 text-center">El rol define el lente con el que responderá.</p>
-                </div>
-                
-                <!-- CONTEXTO -->
-                <div class="group/card bg-black/40 border border-white/5 rounded-2xl p-6 hover:bg-neuro-blue/5 transition-all hover:border-neuro-blue/30 flex flex-col">
-                    <div class="text-blue-400 font-orbitron font-bold text-lg mb-4 flex items-center gap-3">
-                        <span class="w-8 h-8 rounded-lg bg-neuro-blue/10 flex items-center justify-center text-sm shadow-[0_0_10px_rgba(33,0,229,0.3)]">2</span>
-                        CONTEXTO
-                    </div>
-                    <div class="text-xs text-gray-300 leading-relaxed font-light space-y-3 flex-grow">
-                        <p class="font-medium text-white">¿Para qué situación estás pidiendo esto?</p>
-                        <p>Sin contexto, la IA improvisa. Con contexto, la IA afina.</p>
-                        <p>El contexto incluye:</p>
-                        <ul class="list-disc pl-4 space-y-1 text-gray-400">
-                            <li>Quién es la audiencia.</li>
-                            <li>Qué nivel de conocimiento tiene.</li>
-                            <li>Qué objetivo se busca.</li>
-                            <li>En qué entorno se aplicará.</li>
-                        </ul>
-                    </div>
-                    <p class="text-xs text-blue-400 mt-6 text-center">El contexto elimina ambigüedad.</p>
-                </div>
-                
-                <!-- INSTRUCCIÓN -->
-                <div class="group/card bg-black/40 border border-white/5 rounded-2xl p-6 hover:bg-neuro-green/5 transition-all hover:border-neuro-green/30 flex flex-col">
-                    <div class="text-neuro-green font-orbitron font-bold text-lg mb-4 flex items-center gap-3">
-                        <span class="w-8 h-8 rounded-lg bg-neuro-green/10 flex items-center justify-center text-sm shadow-[0_0_10px_rgba(154,255,95,0.2)]">3</span>
-                        INSTRUCCIÓN
-                    </div>
-                    <div class="text-xs text-gray-300 leading-relaxed font-light space-y-3 flex-grow">
-                        <p class="font-medium text-white">¿Qué debe hacer exactamente?</p>
-                        <p>Aquí es donde la mayoría se queda corto.</p>
-                        <p>La instrucción debe ser clara, concreta y accionable.</p>
-                        <div class="bg-red-900/10 border border-red-500/20 rounded-md p-2 mt-2">
-                           <span class="text-red-400 font-bold block mb-1">No digas:</span>
-                           <span class="text-gray-400">"Háblame sobre liderazgo."</span>
-                        </div>
-                    </div>
-                    <div class="mt-2 bg-neuro-green/10 border border-neuro-green/20 rounded-lg p-3">
-                        <span class="text-neuro-green font-bold block mb-1">Di:</span>
-                        <p class="text-[10px] text-white">"Redacta una explicación breve sobre liderazgo en 5 puntos claros, con ejemplos prácticos y lenguaje motivador."</p>
-                    </div>
-                    <p class="text-xs text-neuro-green mt-3 text-center">Mientras más específico seas, más útil será el resultado.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- FASE 3: EJEMPLO PRÁCTICO -->
-        <article class="glass-panel rounded-3xl p-1 relative group">
-          <div class="absolute -inset-0.5 bg-gradient-to-br from-gray-700 to-black opacity-20 group-hover:opacity-40 rounded-3xl blur transition duration-500"></div>
-          <div class="relative bg-neuro-dark/95 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
-            <div class="relative z-10">
-              <div class="flex items-center gap-3 mb-6">
-                <span class="bg-white/10 text-white font-orbitron font-bold text-[10px] px-3 py-1 rounded-full border border-white/20">
-                  FASE 3
-                </span>
-                <h3 class="text-xl font-orbitron font-bold text-white tracking-wide">Ejemplo Práctico Comparativo</h3>
-              </div>
-              
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <!-- Prompt Débil -->
-                  <div class="bg-black/60 rounded-xl border border-red-500/20 p-6 font-mono text-sm shadow-inner flex flex-col">
-                     <strong class="text-red-400 flex items-center gap-2 mb-4"><i data-lucide="x-circle" class="w-5 h-5"></i> Prompt Débil</strong>
-                     <div class="text-gray-300 mb-6 bg-red-900/10 p-4 rounded-lg flex-grow">
-                         "Hazme un plan de clase."
-                     </div>
-                     <div class="text-gray-500 text-xs italic bg-white/5 p-3 rounded-lg border border-white/5">
-                         <strong>Resultado:</strong> general, ambiguo.
-                     </div>
-                  </div>
-
-                  <!-- Prompt Fuerte -->
-                  <div class="bg-black/80 rounded-xl border border-neuro-green/30 p-6 font-mono text-sm shadow-[0_0_15px_rgba(154,255,95,0.05)] flex flex-col">
-                     <strong class="text-neuro-green flex items-center gap-2 mb-4"><i data-lucide="check-circle-2" class="w-5 h-5"></i> Prompt con RCI</strong>
-                     
-                     <div id="prompt-content-fase3" class="text-gray-300 space-y-3 flex-grow">
-                        <div class="bg-white/5 border border-white/10 rounded-lg p-3">
-                            <strong class="text-neuro-green block text-xs mb-1">ROL:</strong>
-                            Actúa como docente de secundaria especializado en tecnología educativa.
-                        </div>
-                        <div class="bg-white/5 border border-white/10 rounded-lg p-3">
-                            <strong class="text-blue-400 block text-xs mb-1">CONTEXTO:</strong>
-                            El plan es para alumnos de 15 años sin conocimientos previos.
-                        </div>
-                        <div class="bg-white/5 border border-white/10 rounded-lg p-3">
-                            <strong class="text-white block text-xs mb-1">INSTRUCCIÓN:</strong>
-                            Diseña una clase introductoria de 40 minutos sobre inteligencia artificial, incluyendo objetivo, actividad práctica y cierre reflexivo.
-                        </div>
-                     </div>
-                  </div>
-              </div>
-
-              <div class="mt-6 pt-6 border-t border-white/10">
-                <p class="text-sm text-gray-400 italic">Aquí no dejamos espacio a la improvisación.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- SECCIÓN RECURSOS / DRIVE -->
-        <section class="mt-16 mb-20">
-            <div class="glass-panel rounded-3xl p-1 bg-gradient-to-r from-neuro-blue/50 to-purple-900/50 border-none group hover:scale-[1.01] transition-transform duration-500">
-              <div class="bg-neuro-dark rounded-[22px] p-8 h-full flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
-                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-overlay"></div>
-                <div class="absolute -right-20 -bottom-40 w-80 h-80 bg-neuro-blue rounded-full filter blur-[120px] opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div class="relative z-10 text-center md:text-left">
-                  <h3 class="text-3xl font-orbitron font-bold text-white mb-3">Recursos de Clase</h3>
-                  <p class="text-gray-300 text-sm max-w-md font-light">Repositorio centralizado. Accede a PDFs, presentaciones y conclusiones en vivo.</p>
-                </div>
-                <div class="relative z-10">
-                  <a href="https://docs.google.com/document/d/1c9XH_-VPwVup4u5ZEOzC0SIv5sO_kDjoNkhSxD9N6dk/edit?usp=sharing" target="_blank" class="btn-cyber flex items-center justify-center gap-4 bg-neuro-dark border border-neuro-blue text-white font-bold py-4 px-10 rounded-xl hover:bg-neuro-blue hover:text-white shadow-[0_0_20px_rgba(33,0,229,0.3)] hover:shadow-[0_0_30px_rgba(33,0,229,0.5)] group-hover:scale-105 transition-transform w-full sm:w-auto">
-                    <span class="font-orbitron tracking-widest text-sm">ABRIR DRIVE</span>
-                    <i data-lucide="external-link" class="w-5 h-5 group-hover:rotate-45 transition-transform"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- CONTENIDO BLOQUE 2 (Guía de Prompts NotebookLM) -->
-    <div id="content-bloque2" class="hidden animate-fade-in-up space-y-12">
-        
-        <!-- ENCABEZADO DE BLOQUE CON MINI NAV -->
-        <div class="text-center py-8">
-            <h2 class="text-3xl font-orbitron font-bold text-white mb-4">GUÍA DE PROMPTS <span class="text-neuro-green">NOTEBOOK LM</span></h2>
-            <p class="text-gray-300 text-sm max-w-xl mx-auto mb-6">Aplicación práctica de la fórmula R.C.I. para el ámbito académico.</p>      
-            
-        </div>
-
-        <div id="section-legal" class="scroll-mt-32"></div>
-
-        <!-- 1. INVESTIGACIÓN ACADÉMICA -->
-        <article class="glass-panel rounded-3xl p-1 relative group">
-          <!-- Fondo Azul Sutil -->
-          <div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-blue to-neuro-dark opacity-20 group-hover:opacity-40 rounded-3xl blur transition duration-500"></div>
-          <div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
-            <div class="relative z-10">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="bg-neuro-blue/10 p-2 rounded-lg border border-neuro-blue/30">
-                    <i data-lucide="book-open" class="text-neuro-blue-light w-5 h-5"></i>
-                </div>
-                <h3 class="text-xl font-orbitron font-bold text-white tracking-wide">Investigación Académica</h3>
-              </div>
-              
-              <div class="mb-6 space-y-4">
-                  <div class="bg-white/5 border border-white/10 rounded-xl p-4">
-                      <p class="text-sm text-gray-300 font-light">
-                        <strong class="text-neuro-blue-light">Qué hace este prompt:</strong> Este prompt convierte la IA en un asistente de investigación académica. Sirve para resumir artículos, comparar autores y organizar ideas de textos académicos con formato formal.
+</div>
+<!-- CONTENIDO BLOQUE 2 (Guía de Prompts NotebookLM) -->
+<div class="hidden animate-fade-in-up space-y-12" id="content-bloque2">
+<!-- ENCABEZADO DE BLOQUE CON MINI NAV -->
+<div class="text-center py-8">
+<h2 class="text-3xl font-orbitron font-bold text-white mb-4">GUÍA DE PROMPTS <span class="text-neuro-green">NOTEBOOK LM</span></h2>
+<p class="text-gray-300 text-sm max-w-xl mx-auto mb-6">Aplicación práctica de la fórmula R.C.I. para el ámbito académico.</p>
+</div>
+<div class="scroll-mt-32" id="section-legal"></div>
+<!-- 1. INVESTIGACIÓN ACADÉMICA -->
+<article class="glass-panel rounded-3xl p-1 relative group">
+<!-- Fondo Azul Sutil -->
+<div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-blue to-neuro-dark opacity-20 group-hover:opacity-40 rounded-3xl blur transition duration-500"></div>
+<div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<div class="bg-neuro-blue/10 p-2 rounded-lg border border-neuro-blue/30">
+<i class="text-neuro-blue-light w-5 h-5" data-lucide="book-open"></i>
+</div>
+<h3 class="text-xl font-orbitron font-bold text-white tracking-wide">Investigación Académica</h3>
+</div>
+<div class="mb-6 space-y-4">
+<div class="bg-white/5 border border-white/10 rounded-xl p-4">
+<p class="text-sm text-gray-300 font-light">
+<strong class="text-neuro-blue-light">Qué hace este prompt:</strong> Este prompt convierte la IA en un asistente de investigación académica. Sirve para resumir artículos, comparar autores y organizar ideas de textos académicos con formato formal.
                       </p>
-                  </div>
-                  
-                  <div class="bg-white/5 border border-white/10 rounded-xl p-4">
-                      <strong class="text-white text-sm block mb-2 font-orbitron tracking-wide">Cómo usarlo:</strong>
-                      <ol class="list-decimal pl-5 space-y-1 text-xs text-gray-400">
-                          <li>Pegá el prompt completo en una conversación nueva con la IA.</li>
-                          <li>Después cargá un artículo o texto académico.</li>
-                          <li>Pedile tareas concretas: resumir, comparar, sintetizar, extraer ideas clave.</li>
-                      </ol>
-                  </div>
-
-                  <div class="flex items-center gap-2 bg-neuro-green/10 border border-neuro-green/30 rounded-lg p-3 text-xs text-neuro-green">
-                      <i data-lucide="alert-circle" class="w-5 h-5 flex-shrink-0"></i>
-                      <p><strong>Importante:</strong> la IA es apoyo para estudiar. No reemplaza la lectura ni el criterio del docente.</p>
-                  </div>
-              </div>
-
-              <div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner">
-                <div id="prompt-nb-1">
+</div>
+<div class="bg-white/5 border border-white/10 rounded-xl p-4">
+<strong class="text-white text-sm block mb-2 font-orbitron tracking-wide">Cómo usarlo:</strong>
+<ol class="list-decimal pl-5 space-y-1 text-xs text-gray-400">
+<li>Pegá el prompt completo en una conversación nueva con la IA.</li>
+<li>Después cargá un artículo o texto académico.</li>
+<li>Pedile tareas concretas: resumir, comparar, sintetizar, extraer ideas clave.</li>
+</ol>
+</div>
+<div class="flex items-center gap-2 bg-neuro-green/10 border border-neuro-green/30 rounded-lg p-3 text-xs text-neuro-green">
+<i class="w-5 h-5 flex-shrink-0" data-lucide="alert-circle"></i>
+<p><strong>Importante:</strong> la IA es apoyo para estudiar. No reemplaza la lectura ni el criterio del docente.</p>
+</div>
+</div>
+<div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner">
+<div id="prompt-nb-1">
 <div class="mb-4">Ahora operas como un asistente de investigación académica especializado en lectura profunda, síntesis estructurada y precisión factual. Tu función es actuar como colaborador académico. Debes resumir textos académicos, comparar argumentos, extraer ideas clave y escribir notas formales con tono académico.</div>
-
 <div class="mb-2"><strong class="text-neuro-blue-light">Reglas obligatorias:</strong></div>
 <div class="bg-white/5 border border-white/10 rounded-lg p-3 mb-4">
-    <ul class="list-none space-y-1 text-gray-400 text-xs">
-        <li>- Nunca inventes fuentes o hechos. Si algo no está en el texto, responde: “no disponible”.</li>
-        <li>- Incluye autor, título y año al citar.</li>
-        <li>- Usa inglés académico formal.</li>
-        <li>- Formato de cita APA por defecto.</li>
-    </ul>
+<ul class="list-none space-y-1 text-gray-400 text-xs">
+<li>- Nunca inventes fuentes o hechos. Si algo no está en el texto, responde: “no disponible”.</li>
+<li>- Incluye autor, título y año al citar.</li>
+<li>- Usa inglés académico formal.</li>
+<li>- Formato de cita APA por defecto.</li>
+</ul>
 </div>
-
 <div class="mb-2"><strong class="text-neuro-blue-light">Estructura siempre la respuesta con estos encabezados:</strong></div>
 <div class="bg-white/5 border border-white/10 rounded-lg p-3 mb-4">
-    <ul class="list-none space-y-1 text-gray-400 text-xs">
-        <li>- Abstract</li>
-        <li>- Summary by Source</li>
-        <li>- Comparative Analysis</li>
-        <li>- Synthesis & Takeaways</li>
-    </ul>
+<ul class="list-none space-y-1 text-gray-400 text-xs">
+<li>- Abstract</li>
+<li>- Summary by Source</li>
+<li>- Comparative Analysis</li>
+<li>- Synthesis &amp; Takeaways</li>
+</ul>
 </div>
-
 <div class="mt-4 pt-4 border-t border-white/10 text-xs">Termina con bibliografía completa. Trata todos los textos que reciba como material académico. No eres un chatbot. Eres un coautor académico riguroso.</div>
-                </div>
-              </div>
-              <div class="mt-6 flex justify-end">
-                <button onclick="copyToClipboard('prompt-nb-1', this)" 
-                        class="btn-cyber flex items-center justify-center gap-2 bg-neuro-blue text-white hover:bg-white hover:text-neuro-blue font-orbitron text-xs font-bold py-3 px-6 rounded-lg transition-all shadow-[0_0_15px_rgba(33,0,229,0.2)] w-full sm:w-auto">
-                  <i data-lucide="copy" class="w-3 h-3"></i>
-                  <span>COPIAR PROMPT</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 2. PROMPT MAESTRO (ANÁLISIS GENERAL) -->
-        <article class="glass-panel rounded-3xl p-1 relative group">
-          <!-- Fondo Verde Sutil -->
-          <div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-green to-neuro-dark opacity-20 group-hover:opacity-40 rounded-3xl blur transition duration-500"></div>
-          <div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
-            <div class="relative z-10">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="bg-neuro-green/10 p-2 rounded-lg border border-neuro-green/30">
-                    <i data-lucide="database" class="text-neuro-green w-5 h-5"></i>
-                </div>
-                <h3 class="text-xl font-orbitron font-bold text-white tracking-wide">Prompt Maestro: Análisis de Datos</h3>
-              </div>
-              <div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-6">
-                 <p class="text-sm text-gray-300 font-light">
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<button class="btn-cyber flex items-center justify-center gap-2 bg-neuro-blue text-white hover:bg-white hover:text-neuro-blue font-orbitron text-xs font-bold py-3 px-6 rounded-lg transition-all shadow-[0_0_15px_rgba(33,0,229,0.2)] w-full sm:w-auto" onclick="copyToClipboard('prompt-nb-1', this)">
+<i class="w-3 h-3" data-lucide="copy"></i>
+<span>COPIAR PROMPT</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- 2. PROMPT MAESTRO (ANÁLISIS GENERAL) -->
+<article class="glass-panel rounded-3xl p-1 relative group">
+<!-- Fondo Verde Sutil -->
+<div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-green to-neuro-dark opacity-20 group-hover:opacity-40 rounded-3xl blur transition duration-500"></div>
+<div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<div class="bg-neuro-green/10 p-2 rounded-lg border border-neuro-green/30">
+<i class="text-neuro-green w-5 h-5" data-lucide="database"></i>
+</div>
+<h3 class="text-xl font-orbitron font-bold text-white tracking-wide">Prompt Maestro: Análisis de Datos</h3>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-6">
+<p class="text-sm text-gray-300 font-light">
                     Genera tablas comparativas de hallazgos basadas estrictamente en las fuentes.
                  </p>
-              </div>
-              <div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner">
-                <div id="prompt-nb-2">
+</div>
+<div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner">
+<div id="prompt-nb-2">
 <div class="mb-4 text-white"><strong class="text-neuro-green">**R (ROL):**</strong> Actúa como un Analista de Datos experto en investigación.</div>
 <div class="mb-4 text-white"><strong class="text-neuro-green">**C (CONTEXTO):**</strong> Utiliza únicamente la información de las fuentes disponibles.</div>
 <div class="mb-4">
-    <div class="text-white mb-2"><strong class="text-neuro-green">**I (INSTRUCCIONES):**</strong> Busca contradicciones, inconsistencias, diferencias u omisiones relevantes y preséntalas en una Tabla con las siguientes columnas:</div>
-    <div class="bg-white/5 border border-white/10 rounded-lg p-3">
-        <ul class="list-none space-y-2 text-gray-400 text-xs">
-            <li>- El Hallazgo (Qué falta o no coincide)</li>
-            <li>- Ubicación (Fuente/Sección)</li>
-            <li>- Importancia (Por qué es relevante)</li>
-        </ul>
-    </div>
+<div class="text-white mb-2"><strong class="text-neuro-green">**I (INSTRUCCIONES):**</strong> Busca contradicciones, inconsistencias, diferencias u omisiones relevantes y preséntalas en una Tabla con las siguientes columnas:</div>
+<div class="bg-white/5 border border-white/10 rounded-lg p-3">
+<ul class="list-none space-y-2 text-gray-400 text-xs">
+<li>- El Hallazgo (Qué falta o no coincide)</li>
+<li>- Ubicación (Fuente/Sección)</li>
+<li>- Importancia (Por qué es relevante)</li>
+</ul>
+</div>
 </div>
 <div class="mt-4 pt-4 border-t border-white/10 text-xs text-gray-500 italic">
     Nota: Si un dato no existe en los documentos, acláralo explícitamente con "No disponible en fuentes".
 </div>
-                </div>
-              </div>
-              <div class="mt-6 flex justify-end">
-                <button onclick="copyToClipboard('prompt-nb-2', this)" 
-                        class="btn-cyber flex items-center justify-center gap-2 bg-transparent border border-neuro-green text-neuro-green hover:bg-neuro-green hover:text-black font-orbitron text-xs font-bold py-3 px-6 rounded-lg transition-all w-full sm:w-auto">
-                  <i data-lucide="copy" class="w-3 h-3"></i>
-                  <span>COPIAR PROMPT</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 3. EL ANALISTA DE LÍNEAS INVISIBLES -->
-        <article class="glass-panel rounded-3xl p-1 relative group">
-          <!-- Fondo Azul Claro Sutil -->
-          <div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-blue-light to-neuro-dark opacity-10 group-hover:opacity-30 rounded-3xl blur transition duration-500"></div>
-          <div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
-            <div class="relative z-10">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="bg-neuro-blue-light/10 p-2 rounded-lg border border-neuro-blue-light/30">
-                    <i data-lucide="eye" class="text-neuro-blue-light w-5 h-5"></i>
-                </div>
-                <h3 class="text-xl font-orbitron font-bold text-white tracking-wide">El Analista de "Líneas Invisibles"</h3>
-              </div>
-              
-              <!-- Nota de Valor en Glassmorphism Gris -->
-              <div class="glass-panel border-white/10 rounded-lg p-3 mb-6 flex gap-3 items-start bg-white/5">
-                  <i data-lucide="lightbulb" class="text-neuro-green w-5 h-5 flex-shrink-0 mt-0.5"></i>
-                  <p class="text-xs text-gray-300/90"><strong class="text-white">¿Para qué sirve?</strong> Para ver lo que el 99% de la gente ignora. Detecta sesgos, intenciones no declaradas, falacias lógicas y el verdadero trasfondo de cualquier discurso, contrato o artículo.</p>
-              </div>
-
-              <div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner">
-                <div id="prompt-nb-3">
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<button class="btn-cyber flex items-center justify-center gap-2 bg-transparent border border-neuro-green text-neuro-green hover:bg-neuro-green hover:text-black font-orbitron text-xs font-bold py-3 px-6 rounded-lg transition-all w-full sm:w-auto" onclick="copyToClipboard('prompt-nb-2', this)">
+<i class="w-3 h-3" data-lucide="copy"></i>
+<span>COPIAR PROMPT</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- 3. EL ANALISTA DE LÍNEAS INVISIBLES -->
+<article class="glass-panel rounded-3xl p-1 relative group">
+<!-- Fondo Azul Claro Sutil -->
+<div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-blue-light to-neuro-dark opacity-10 group-hover:opacity-30 rounded-3xl blur transition duration-500"></div>
+<div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<div class="bg-neuro-blue-light/10 p-2 rounded-lg border border-neuro-blue-light/30">
+<i class="text-neuro-blue-light w-5 h-5" data-lucide="eye"></i>
+</div>
+<h3 class="text-xl font-orbitron font-bold text-white tracking-wide">El Analista de "Líneas Invisibles"</h3>
+</div>
+<!-- Nota de Valor en Glassmorphism Gris -->
+<div class="glass-panel border-white/10 rounded-lg p-3 mb-6 flex gap-3 items-start bg-white/5">
+<i class="text-neuro-green w-5 h-5 flex-shrink-0 mt-0.5" data-lucide="lightbulb"></i>
+<p class="text-xs text-gray-300/90"><strong class="text-white">¿Para qué sirve?</strong> Para ver lo que el 99% de la gente ignora. Detecta sesgos, intenciones no declaradas, falacias lógicas y el verdadero trasfondo de cualquier discurso, contrato o artículo.</p>
+</div>
+<div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner">
+<div id="prompt-nb-3">
 <div class="mb-4 text-white"><strong class="text-neuro-blue-light">**R (ROL):**</strong> Eres un Analista Forense de Información y Especialista en Inteligencia. Tu habilidad principal es el pensamiento crítico radical y la detección de patrones de manipulación o sesgos cognitivos.</div>
 <div class="mb-4 text-white"><strong class="text-neuro-blue-light">**C (CONTEXTO/OBJETIVO):**</strong> Deconstruir el texto proporcionado para revelar suposiciones, sesgos y mensajes implícitos que solo un experto de élite notaría.</div>
 <div class="mb-4">
-    <div class="text-white mb-2"><strong class="text-neuro-blue-light">**I (INSTRUCCIONES DE DECONSTRUCCIÓN):**</strong></div>
-    <div class="bg-white/5 border border-white/10 rounded-lg p-3">
-        <ul class="list-none space-y-2 text-gray-400 text-xs">
-            <li><strong>1. Cuestionamiento de Premisas:</strong> Identifica qué está asumiendo el autor como "verdad absoluta" sin presentar pruebas.</li>
-            <li><strong>2. Identificación de Sesgos:</strong> Detecta sesgos de confirmación, lenguaje cargado emocionalmente o selección interesada de datos (cherry-picking).</li>
-            <li><strong>3. El Elefante en la Habitación:</strong> Señala qué información crucial se ha omitido deliberadamente para favorecer una narrativa.</li>
-        </ul>
-    </div>
+<div class="text-white mb-2"><strong class="text-neuro-blue-light">**I (INSTRUCCIONES DE DECONSTRUCCIÓN):**</strong></div>
+<div class="bg-white/5 border border-white/10 rounded-lg p-3">
+<ul class="list-none space-y-2 text-gray-400 text-xs">
+<li><strong>1. Cuestionamiento de Premisas:</strong> Identifica qué está asumiendo el autor como "verdad absoluta" sin presentar pruebas.</li>
+<li><strong>2. Identificación de Sesgos:</strong> Detecta sesgos de confirmación, lenguaje cargado emocionalmente o selección interesada de datos (cherry-picking).</li>
+<li><strong>3. El Elefante en la Habitación:</strong> Señala qué información crucial se ha omitido deliberadamente para favorecer una narrativa.</li>
+</ul>
+</div>
 </div>
 <div class="mb-4">
-    <div class="text-white mb-2"><strong class="text-neuro-blue-light">**ESTRUCTURA DE SALIDA OBLIGATORIA:**</strong></div>
-    <div class="bg-white/5 border border-white/10 rounded-lg p-3">
-        <ul class="list-none space-y-1 text-gray-400 text-xs">
-            <li>- <strong>Suposiciones Ocultas:</strong> Aquello que el autor da por sentado pero que es debatible.</li>
-            <li>- <strong>Sesgos Detectados:</strong> Lista de prejuicios o inclinaciones encontradas en el texto.</li>
-            <li>- <strong>Lo "No Dicho":</strong> Las omisiones clave y percepciones que se intentan ocultar.</li>
-            <li>- <strong>Perspectiva de Experto:</strong> ¿Qué vería un PhD o un CEO de la industria en este texto que un lector común pasaría por alto?</li>
-            <li>- <strong>Veredicto de Neutralidad:</strong> Puntuación de 1 a 10 (1 = Manipulación pura / 10 = Objetividad total).</li>
-        </ul>
-    </div>
+<div class="text-white mb-2"><strong class="text-neuro-blue-light">**ESTRUCTURA DE SALIDA OBLIGATORIA:**</strong></div>
+<div class="bg-white/5 border border-white/10 rounded-lg p-3">
+<ul class="list-none space-y-1 text-gray-400 text-xs">
+<li>- <strong>Suposiciones Ocultas:</strong> Aquello que el autor da por sentado pero que es debatible.</li>
+<li>- <strong>Sesgos Detectados:</strong> Lista de prejuicios o inclinaciones encontradas en el texto.</li>
+<li>- <strong>Lo "No Dicho":</strong> Las omisiones clave y percepciones que se intentan ocultar.</li>
+<li>- <strong>Perspectiva de Experto:</strong> ¿Qué vería un PhD o un CEO de la industria en este texto que un lector común pasaría por alto?</li>
+<li>- <strong>Veredicto de Neutralidad:</strong> Puntuación de 1 a 10 (1 = Manipulación pura / 10 = Objetividad total).</li>
+</ul>
 </div>
-                </div>
-              </div>
-              <div class="mt-6 flex justify-end">
-                <button onclick="copyToClipboard('prompt-nb-3', this)" 
-                        class="btn-cyber flex items-center justify-center gap-2 bg-neuro-blue-light/10 border border-neuro-blue-light text-neuro-blue-light hover:bg-neuro-blue-light hover:text-white font-orbitron text-xs font-bold py-3 px-6 rounded-lg transition-all w-full sm:w-auto">
-                  <i data-lucide="copy" class="w-3 h-3"></i>
-                  <span>COPIAR PROMPT</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- GRID 2 COLUMNAS PARA JUBILADOS Y ESTUDIANTES -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- 4. JUBILADOS (SIMPLIFICACIÓN) - Estilo Verde (Amigable) -->
-            <article class="glass-panel rounded-3xl p-1 relative group">
-                <div class="absolute -inset-0.5 bg-gradient-to-br from-neuro-green to-black opacity-10 group-hover:opacity-30 rounded-3xl blur transition duration-500"></div>
-                <div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 overflow-hidden flex flex-col">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-neuro-green/10 p-2 rounded-lg border border-neuro-green/30">
-                            <i data-lucide="message-circle" class="text-neuro-green w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-lg font-orbitron font-bold text-white">Simplificación</h3>
-                    </div>
-                    <div class="bg-black/80 rounded-xl border border-white/5 p-4 font-mono text-xs text-gray-300 leading-relaxed shadow-inner flex-grow">
-                        <div id="prompt-nb-4">
+</div>
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<button class="btn-cyber flex items-center justify-center gap-2 bg-neuro-blue-light/10 border border-neuro-blue-light text-neuro-blue-light hover:bg-neuro-blue-light hover:text-white font-orbitron text-xs font-bold py-3 px-6 rounded-lg transition-all w-full sm:w-auto" onclick="copyToClipboard('prompt-nb-3', this)">
+<i class="w-3 h-3" data-lucide="copy"></i>
+<span>COPIAR PROMPT</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- GRID 2 COLUMNAS PARA JUBILADOS Y ESTUDIANTES -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- 4. JUBILADOS (SIMPLIFICACIÓN) - Estilo Verde (Amigable) -->
+<article class="glass-panel rounded-3xl p-1 relative group">
+<div class="absolute -inset-0.5 bg-gradient-to-br from-neuro-green to-black opacity-10 group-hover:opacity-30 rounded-3xl blur transition duration-500"></div>
+<div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 overflow-hidden flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<div class="bg-neuro-green/10 p-2 rounded-lg border border-neuro-green/30">
+<i class="text-neuro-green w-5 h-5" data-lucide="message-circle"></i>
+</div>
+<h3 class="text-lg font-orbitron font-bold text-white">Simplificación</h3>
+</div>
+<div class="bg-black/80 rounded-xl border border-white/5 p-4 font-mono text-xs text-gray-300 leading-relaxed shadow-inner flex-grow">
+<div id="prompt-nb-4">
 <div class="mb-2"><strong class="text-neuro-green">**R (ROL):**</strong> Actúa como un Asistente de Comunicación paciente y claro.</div>
 <div class="mb-2"><strong class="text-neuro-green">**C (CONTEXTO):**</strong> Revisa el texto del documento seleccionado.</div>
 <div class="mb-2"><strong class="text-neuro-green">**I (INSTRUCCIONES):**</strong> Traduce el contenido a un lenguaje cotidiano y sencillo:</div>
 <div class="bg-white/5 border border-white/10 rounded-lg p-3 mt-2">
-    <ul class="space-y-1 text-gray-400">
-        <li>- Explica de qué se trata el documento.</li>
-        <li>- Usa una analogía o ejemplo de la vida diaria.</li>
-        <li>- Evita por completo la jerga técnica o legal.</li>
-    </ul>
+<ul class="space-y-1 text-gray-400">
+<li>- Explica de qué se trata el documento.</li>
+<li>- Usa una analogía o ejemplo de la vida diaria.</li>
+<li>- Evita por completo la jerga técnica o legal.</li>
+</ul>
 </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 flex justify-end">
-                        <button onclick="copyToClipboard('prompt-nb-4', this)" class="text-[10px] font-orbitron font-bold text-neuro-green hover:text-white flex items-center justify-center gap-2 px-3 py-2 border border-neuro-green/30 rounded hover:bg-neuro-green/20 transition-all w-full sm:w-auto">
-                            <i data-lucide="copy" class="w-3 h-3"></i> COPIAR
+</div>
+</div>
+<div class="mt-4 flex justify-end">
+<button class="text-[10px] font-orbitron font-bold text-neuro-green hover:text-white flex items-center justify-center gap-2 px-3 py-2 border border-neuro-green/30 rounded hover:bg-neuro-green/20 transition-all w-full sm:w-auto" onclick="copyToClipboard('prompt-nb-4', this)">
+<i class="w-3 h-3" data-lucide="copy"></i> COPIAR
                         </button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 5. ESTUDIANTES (PENSAMIENTO CRÍTICO) - Estilo Azul (Profundidad) -->
-            <article class="glass-panel rounded-3xl p-1 relative group">
-                <div class="absolute -inset-0.5 bg-gradient-to-br from-neuro-blue to-black opacity-10 group-hover:opacity-30 rounded-3xl blur transition duration-500"></div>
-                <div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 overflow-hidden flex flex-col">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-neuro-blue/10 p-2 rounded-lg border border-neuro-blue/30">
-                            <i data-lucide="graduation-cap" class="text-neuro-blue-light w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-lg font-orbitron font-bold text-white">Pensamiento Crítico</h3>
-                    </div>
-                    <div class="bg-black/80 rounded-xl border border-white/5 p-4 font-mono text-xs text-gray-300 leading-relaxed shadow-inner flex-grow">
-                        <div id="prompt-nb-5">
+</div>
+</div>
+</article>
+<!-- 5. ESTUDIANTES (PENSAMIENTO CRÍTICO) - Estilo Azul (Profundidad) -->
+<article class="glass-panel rounded-3xl p-1 relative group">
+<div class="absolute -inset-0.5 bg-gradient-to-br from-neuro-blue to-black opacity-10 group-hover:opacity-30 rounded-3xl blur transition duration-500"></div>
+<div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 overflow-hidden flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<div class="bg-neuro-blue/10 p-2 rounded-lg border border-neuro-blue/30">
+<i class="text-neuro-blue-light w-5 h-5" data-lucide="graduation-cap"></i>
+</div>
+<h3 class="text-lg font-orbitron font-bold text-white">Pensamiento Crítico</h3>
+</div>
+<div class="bg-black/80 rounded-xl border border-white/5 p-4 font-mono text-xs text-gray-300 leading-relaxed shadow-inner flex-grow">
+<div id="prompt-nb-5">
 <div class="mb-2"><strong class="text-neuro-blue-light">**R (ROL):**</strong> Actúa como mi Tutor Académico personal enfocado en pensamiento crítico.</div>
 <div class="mb-2"><strong class="text-neuro-blue-light">**C (CONTEXTO):**</strong> Examina todos los textos de estudio cargados.</div>
 <div class="mb-2"><strong class="text-neuro-blue-light">**I (INSTRUCCIONES):**</strong> Realiza un análisis crítico respondiendo:</div>
 <div class="bg-white/5 border border-white/10 rounded-lg p-3 mt-2">
-    <ul class="space-y-1 text-gray-400">
-        <li>- Conceptos: ¿Hay algún concepto contradictorio? (Cita págs).</li>
-        <li>- Inconsistencias: ¿Errores de coherencia en fechas/ejemplos?</li>
-        <li>- Omisiones: ¿Qué temas vitales faltan para mi examen?</li>
-    </ul>
+<ul class="space-y-1 text-gray-400">
+<li>- Conceptos: ¿Hay algún concepto contradictorio? (Cita págs).</li>
+<li>- Inconsistencias: ¿Errores de coherencia en fechas/ejemplos?</li>
+<li>- Omisiones: ¿Qué temas vitales faltan para mi examen?</li>
+</ul>
 </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 flex justify-end">
-                        <button onclick="copyToClipboard('prompt-nb-5', this)" class="text-[10px] font-orbitron font-bold text-neuro-blue-light hover:text-white flex items-center justify-center gap-2 px-3 py-2 border border-neuro-blue-light/30 rounded hover:bg-neuro-blue-light/20 transition-all w-full sm:w-auto">
-                            <i data-lucide="copy" class="w-3 h-3"></i> COPIAR
+</div>
+</div>
+<div class="mt-4 flex justify-end">
+<button class="text-[10px] font-orbitron font-bold text-neuro-blue-light hover:text-white flex items-center justify-center gap-2 px-3 py-2 border border-neuro-blue-light/30 rounded hover:bg-neuro-blue-light/20 transition-all w-full sm:w-auto" onclick="copyToClipboard('prompt-nb-5', this)">
+<i class="w-3 h-3" data-lucide="copy"></i> COPIAR
                         </button>
-                    </div>
-                </div>
-            </article>
-        </div>
-
-    </div>
-
-    <!-- CONTENIDO BLOQUE 3: PRESENTACIONES CON GAMMA -->
-    <div id="content-bloque3" class="hidden animate-fade-in-up space-y-12">
-        
-        <!-- ENCABEZADO -->
-        <div class="text-center py-8">
-            <h2 class="text-3xl font-orbitron font-bold text-white mb-4">PRESENTACIONES CON <span class="text-neuro-green">GAMMA APP</span></h2>
-            <p class="text-gray-300 text-sm max-w-xl mx-auto mb-6">
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- CONTENIDO BLOQUE 3: PRESENTACIONES CON GAMMA -->
+<div class="hidden animate-fade-in-up space-y-12" id="content-bloque3">
+<!-- ENCABEZADO -->
+<div class="text-center py-8">
+<h2 class="text-3xl font-orbitron font-bold text-white mb-4">PRESENTACIONES CON <span class="text-neuro-green">GAMMA APP</span></h2>
+<p class="text-gray-300 text-sm max-w-xl mx-auto mb-6">
                 Creación de narrativas visuales y diseño ejecutivo con IA.
             </p>
-        </div>
-
-        <!-- FORMULARIO INTERACTIVO (CONFIGURADOR) -->
-        <section class="glass-panel rounded-3xl p-6 border border-white/5 relative overflow-hidden mb-8">
-             <div class="flex items-center gap-3 mb-6">
-                <div class="bg-neuro-green/10 p-2 rounded-lg border border-neuro-green/30">
-                    <i data-lucide="sliders" class="text-neuro-green w-5 h-5"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-orbitron font-bold text-white">Configurador de Presentación</h3>
-                    <p class="text-[10px] text-gray-400">Completa aquí y los datos se autocompletarán en ambos prompts.</p>
-                </div>
-             </div>
-             
-             <div class="space-y-6">
-                 <!-- TEMA -->
-                 <div class="bg-black/60 rounded-xl border border-white/5 p-4">
-                     <label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Tema Principal de la Presentación</label>
-                     <input type="text" id="gamma-tema" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" placeholder="Ej: Estrategia de Marketing Q3..." oninput="updateGammaPrompts()">
-                 </div>
-
-                 <!-- GRID 1: Audiencia, Objetivo, Formato -->
-                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                     <div class="bg-black/60 rounded-xl border border-white/5 p-4">
-                         <label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Audiencia</label>
-                         <div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-audiencia', 'Directivos/C-Level')">Directivos</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-audiencia', 'Alumnos universitarios')">Alumnos</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-audiencia', 'Clientes potenciales')">Clientes</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-audiencia', 'Público general')">General</span>
-                         </div>
-                         <input type="text" id="gamma-audiencia" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" placeholder="O escribe quiénes son..." oninput="updateGammaPrompts()">
-                     </div>
-                     <div class="bg-black/60 rounded-xl border border-white/5 p-4">
-                         <label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Objetivo</label>
-                         <div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-objetivo', 'Informar')">Informar</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-objetivo', 'Persuadir')">Persuadir</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-objetivo', 'Capacitar')">Capacitar</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-objetivo', 'Vender')">Vender</span>
-                         </div>
-                         <input type="text" id="gamma-objetivo" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" placeholder="Informar, vender..." oninput="updateGammaPrompts()">
-                     </div>
-                     <div class="bg-black/60 rounded-xl border border-white/5 p-4">
-                         <label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Formato</label>
-                         <div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-formato', 'Presencial')">Presencial</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-formato', 'Zoom/Virtual')">Zoom</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-formato', 'Envío por correo (Asincrónico)')">Por Correo</span>
-                         </div>
-                         <input type="text" id="gamma-formato" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" placeholder="Ej: Presencial" oninput="updateGammaPrompts()">
-                     </div>
-                 </div>
-
-                 <!-- GRID 2: Nivel, Tono, Duración -->
-                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                     <div class="bg-black/60 rounded-xl border border-white/5 p-4">
-                         <label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Nivel de la audiencia</label>
-                         <div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-nivel', 'Básico')">Básico</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-nivel', 'Intermedio')">Intermedio</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-nivel', 'Avanzado')">Avanzado</span>
-                         </div>
-                         <input type="text" id="gamma-nivel" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" placeholder="Básico, experto..." oninput="updateGammaPrompts()">
-                     </div>
-                     <div class="bg-black/60 rounded-xl border border-white/5 p-4">
-                         <label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Tono del mensaje</label>
-                         <div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-tono', 'Formal y serio')">Formal</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-tono', 'Cercano y empático')">Cercano</span>
-                             <span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-tono', 'Ejecutivo y directo')">Ejecutivo</span>
-                         </div>
-                         <input type="text" id="gamma-tono" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" placeholder="Formal, directo..." oninput="updateGammaPrompts()">
-                     </div>
-                     <div class="bg-black/60 rounded-xl border border-white/5 p-4">
-                         <label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Duración Estimada</label>
-                         <input type="number" id="gamma-duracion" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" placeholder="Minutos (ej: 20)" oninput="updateGammaPrompts()">
-                     </div>
-                 </div>
-             </div>
-        </section>
-
-        <!-- PROMPT 1: STORYTELLER -->
-        <article class="glass-panel rounded-3xl p-1 relative group">
-          <div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-green to-neuro-dark opacity-30 group-hover:opacity-50 rounded-3xl blur transition duration-500"></div>
-          <div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
-            <div class="relative z-10">
-              <div class="flex items-center gap-3 mb-6">
-                 <div class="bg-neuro-green/10 p-2 rounded-lg border border-neuro-green/30">
-                    <i data-lucide="presentation" class="text-neuro-green w-6 h-6"></i>
-                 </div>
-                <h3 class="text-2xl font-orbitron font-bold text-white tracking-wide">Arquitecto de Presentaciones</h3>
-              </div>
-              <div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-6">
-                 <p class="text-sm text-gray-300 font-light">
+</div>
+<!-- FORMULARIO INTERACTIVO (CONFIGURADOR) -->
+<section class="glass-panel rounded-3xl p-6 border border-white/5 relative overflow-hidden mb-8">
+<div class="flex items-center gap-3 mb-6">
+<div class="bg-neuro-green/10 p-2 rounded-lg border border-neuro-green/30">
+<i class="text-neuro-green w-5 h-5" data-lucide="sliders"></i>
+</div>
+<div>
+<h3 class="text-lg font-orbitron font-bold text-white">Configurador de Presentación</h3>
+<p class="text-[10px] text-gray-400">Completa aquí y los datos se autocompletarán en ambos prompts.</p>
+</div>
+</div>
+<div class="space-y-6">
+<!-- TEMA -->
+<div class="bg-black/60 rounded-xl border border-white/5 p-4">
+<label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Tema Principal de la Presentación</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" id="gamma-tema" oninput="updateGammaPrompts()" placeholder="Ej: Estrategia de Marketing Q3..." type="text"/>
+</div>
+<!-- GRID 1: Audiencia, Objetivo, Formato -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-black/60 rounded-xl border border-white/5 p-4">
+<label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Audiencia</label>
+<div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-audiencia', 'Directivos/C-Level')">Directivos</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-audiencia', 'Alumnos universitarios')">Alumnos</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-audiencia', 'Clientes potenciales')">Clientes</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-audiencia', 'Público general')">General</span>
+</div>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" id="gamma-audiencia" oninput="updateGammaPrompts()" placeholder="O escribe quiénes son..." type="text"/>
+</div>
+<div class="bg-black/60 rounded-xl border border-white/5 p-4">
+<label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Objetivo</label>
+<div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-objetivo', 'Informar')">Informar</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-objetivo', 'Persuadir')">Persuadir</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-objetivo', 'Capacitar')">Capacitar</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-objetivo', 'Vender')">Vender</span>
+</div>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" id="gamma-objetivo" oninput="updateGammaPrompts()" placeholder="Informar, vender..." type="text"/>
+</div>
+<div class="bg-black/60 rounded-xl border border-white/5 p-4">
+<label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Formato</label>
+<div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-formato', 'Presencial')">Presencial</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-formato', 'Zoom/Virtual')">Zoom</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-formato', 'Envío por correo (Asincrónico)')">Por Correo</span>
+</div>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" id="gamma-formato" oninput="updateGammaPrompts()" placeholder="Ej: Presencial" type="text"/>
+</div>
+</div>
+<!-- GRID 2: Nivel, Tono, Duración -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-black/60 rounded-xl border border-white/5 p-4">
+<label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Nivel de la audiencia</label>
+<div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-nivel', 'Básico')">Básico</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-nivel', 'Intermedio')">Intermedio</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-nivel', 'Avanzado')">Avanzado</span>
+</div>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" id="gamma-nivel" oninput="updateGammaPrompts()" placeholder="Básico, experto..." type="text"/>
+</div>
+<div class="bg-black/60 rounded-xl border border-white/5 p-4">
+<label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Tono del mensaje</label>
+<div class="flex gap-2 overflow-x-auto pb-2 mb-2 custom-scrollbar">
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-tono', 'Formal y serio')">Formal</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-tono', 'Cercano y empático')">Cercano</span>
+<span class="chip-select px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white" onclick="setGammaValue('gamma-tono', 'Ejecutivo y directo')">Ejecutivo</span>
+</div>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" id="gamma-tono" oninput="updateGammaPrompts()" placeholder="Formal, directo..." type="text"/>
+</div>
+<div class="bg-black/60 rounded-xl border border-white/5 p-4">
+<label class="text-neuro-green font-bold text-xs uppercase mb-2 block">Duración Estimada</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-neuro-green/50 transition-colors" id="gamma-duracion" oninput="updateGammaPrompts()" placeholder="Minutos (ej: 20)" type="number"/>
+</div>
+</div>
+</div>
+</section>
+<!-- PROMPT 1: STORYTELLER -->
+<article class="glass-panel rounded-3xl p-1 relative group">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-green to-neuro-dark opacity-30 group-hover:opacity-50 rounded-3xl blur transition duration-500"></div>
+<div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<div class="bg-neuro-green/10 p-2 rounded-lg border border-neuro-green/30">
+<i class="text-neuro-green w-6 h-6" data-lucide="presentation"></i>
+</div>
+<h3 class="text-2xl font-orbitron font-bold text-white tracking-wide">Arquitecto de Presentaciones</h3>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-6">
+<p class="text-sm text-gray-300 font-light">
                     Diseña el guion y la estructura narrativa diapositiva por diapositiva.
                  </p>
-              </div>
-              <div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner overflow-x-auto">
-                <div id="prompt-gamma-1">
-<div class="mb-4"><strong class="text-neuro-green">**R (ROL):**</strong><br>Eres un Arquitecto de Presentaciones y Storyteller Ejecutivo. Tu trabajo es convertir ideas en una narrativa clara, persuasiva y fácil de exponer, asegurando ritmo, coherencia y foco en decisiones. No rellenes: priorizá estructura, claridad y acción.</div>
-<div class="mb-4"><strong class="text-neuro-green">**C (CONTEXTO):**</strong><br>
-- Audiencia: <span id="out-g-aud-1" class="text-gray-500">[Audiencia]</span><br>
-- Objetivo: <span id="out-g-obj-1" class="text-gray-500">[Objetivo]</span><br>
-- Duración: <span id="out-g-dur-1" class="text-gray-500">[Minutos]</span> min<br>
-- Nivel: <span id="out-g-niv-1" class="text-gray-500">[Nivel]</span><br>
-- Tono: <span id="out-g-ton-1" class="text-gray-500">[Tono]</span><br>
-- Formato: <span id="out-g-for-1" class="text-gray-500">[Formato]</span></div>
-<div class="mb-4"><strong class="text-neuro-green">**I (INSTRUCCIONES):**</strong><br>Diseñá un guion “diapositiva por diapositiva” para una presentación sobre <span id="out-g-tema-1" class="text-gray-500 font-bold">[TEMA]</span>.</div>
-<div class="mb-4"><strong class="text-white">REGLAS DE CALIDAD (para evitar resultados vagos):</strong><br>
-1) Una diapositiva = una idea central. No satures.<br>
-2) Texto en pantalla mínimo: máximo 25 palabras por diapositiva.<br>
-3) Nada de relleno: cada diapositiva debe aportar al objetivo.<br>
+</div>
+<div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner overflow-x-auto">
+<div id="prompt-gamma-1">
+<div class="mb-4"><strong class="text-neuro-green">**R (ROL):**</strong><br/>Eres un Arquitecto de Presentaciones y Storyteller Ejecutivo. Tu trabajo es convertir ideas en una narrativa clara, persuasiva y fácil de exponer, asegurando ritmo, coherencia y foco en decisiones. No rellenes: priorizá estructura, claridad y acción.</div>
+<div class="mb-4"><strong class="text-neuro-green">**C (CONTEXTO):**</strong><br/>
+- Audiencia: <span class="text-gray-500" id="out-g-aud-1">[Audiencia]</span><br/>
+- Objetivo: <span class="text-gray-500" id="out-g-obj-1">[Objetivo]</span><br/>
+- Duración: <span class="text-gray-500" id="out-g-dur-1">[Minutos]</span> min<br/>
+- Nivel: <span class="text-gray-500" id="out-g-niv-1">[Nivel]</span><br/>
+- Tono: <span class="text-gray-500" id="out-g-ton-1">[Tono]</span><br/>
+- Formato: <span class="text-gray-500" id="out-g-for-1">[Formato]</span></div>
+<div class="mb-4"><strong class="text-neuro-green">**I (INSTRUCCIONES):**</strong><br/>Diseñá un guion “diapositiva por diapositiva” para una presentación sobre <span class="text-gray-500 font-bold" id="out-g-tema-1">[TEMA]</span>.</div>
+<div class="mb-4"><strong class="text-white">REGLAS DE CALIDAD (para evitar resultados vagos):</strong><br/>
+1) Una diapositiva = una idea central. No satures.<br/>
+2) Texto en pantalla mínimo: máximo 25 palabras por diapositiva.<br/>
+3) Nada de relleno: cada diapositiva debe aportar al objetivo.<br/>
 4) Si falta información crítica, haceme hasta 3 preguntas antes de armar la estructura.</div>
-<div class="mb-4"><strong class="text-white">ESTRUCTURA NARRATIVA OBLIGATORIA (para que fluya):</strong><br>
-- Inicio: problema + por qué importa<br>
-- Cuerpo: 3–4 ideas clave con evidencia/ejemplos<br>
-- Aplicación: cómo se usa / pasos / decisión<br>
+<div class="mb-4"><strong class="text-white">ESTRUCTURA NARRATIVA OBLIGATORIA (para que fluya):</strong><br/>
+- Inicio: problema + por qué importa<br/>
+- Cuerpo: 3–4 ideas clave con evidencia/ejemplos<br/>
+- Aplicación: cómo se usa / pasos / decisión<br/>
 - Cierre: síntesis + llamada a la acción o takeaway</div>
-<div class="mb-4"><strong class="text-white">ENTREGABLE (por cada diapositiva entregá en este orden):</strong><br>
-1) Título (corto y claro)<br>
-2) Propósito (1 línea: para qué existe)<br>
-3) Mensaje clave (1 frase)<br>
-4) Visual sugerido (foto/diagrama/tabla/ícono)<br>
+<div class="mb-4"><strong class="text-white">ENTREGABLE (por cada diapositiva entregá en este orden):</strong><br/>
+1) Título (corto y claro)<br/>
+2) Propósito (1 línea: para qué existe)<br/>
+3) Mensaje clave (1 frase)<br/>
+4) Visual sugerido (foto/diagrama/tabla/ícono)<br/>
 5) Guion del orador (1–2 líneas, lo que digo)</div>
-<div><strong class="text-neuro-green">AL FINAL:</strong><br>Proponé 3 preguntas difíciles que podría hacer el público y una respuesta breve para cada una.</div>
-                </div>
-              </div>
-              <div class="mt-8 flex justify-end">
-                <button onclick="copyToClipboard('prompt-gamma-1', this)" 
-                        class="btn-cyber flex items-center justify-center gap-3 bg-neuro-green text-black font-orbitron font-bold py-3 px-8 rounded-xl hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(154,255,95,0.3)] hover:shadow-[0_0_30px_rgba(154,255,95,0.6)] w-full sm:w-auto">
-                  <i data-lucide="copy" class="w-4 h-4"></i>
-                  <span>COPIAR PROMPT</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROMPT 2: DIRECTOR DE ARTE -->
-        <article class="glass-panel rounded-3xl p-1 relative group mt-8">
-          <div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-blue-light to-neuro-dark opacity-30 group-hover:opacity-50 rounded-3xl blur transition duration-500"></div>
-          <div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
-            <div class="relative z-10">
-              <div class="flex items-center gap-3 mb-6">
-                 <div class="bg-neuro-blue-light/10 p-2 rounded-lg border border-neuro-blue-light/30">
-                    <i data-lucide="palette" class="text-neuro-blue-light w-6 h-6"></i>
-                 </div>
-                <h3 class="text-2xl font-orbitron font-bold text-white tracking-wide">Director de Arte</h3>
-              </div>
-              <div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-6">
-                 <p class="text-sm text-gray-300 font-light">
+<div><strong class="text-neuro-green">AL FINAL:</strong><br/>Proponé 3 preguntas difíciles que podría hacer el público y una respuesta breve para cada una.</div>
+</div>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="btn-cyber flex items-center justify-center gap-3 bg-neuro-green text-black font-orbitron font-bold py-3 px-8 rounded-xl hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(154,255,95,0.3)] hover:shadow-[0_0_30px_rgba(154,255,95,0.6)] w-full sm:w-auto" onclick="copyToClipboard('prompt-gamma-1', this)">
+<i class="w-4 h-4" data-lucide="copy"></i>
+<span>COPIAR PROMPT</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- PROMPT 2: DIRECTOR DE ARTE -->
+<article class="glass-panel rounded-3xl p-1 relative group mt-8">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-neuro-blue-light to-neuro-dark opacity-30 group-hover:opacity-50 rounded-3xl blur transition duration-500"></div>
+<div class="relative bg-neuro-dark/90 h-full rounded-[20px] p-6 md:p-8 overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<div class="bg-neuro-blue-light/10 p-2 rounded-lg border border-neuro-blue-light/30">
+<i class="text-neuro-blue-light w-6 h-6" data-lucide="palette"></i>
+</div>
+<h3 class="text-2xl font-orbitron font-bold text-white tracking-wide">Director de Arte</h3>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-6">
+<p class="text-sm text-gray-300 font-light">
                     Sugerencias visuales y layouts para ejecutar en PowerPoint, Canva o Gamma.
                  </p>
-              </div>
-              <div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner overflow-x-auto">
-                <div id="prompt-gamma-2">
-<div class="mb-4"><strong class="text-neuro-blue-light">**R (ROL):**</strong><br>Eres un Director de Arte y Diseñador de Presentaciones (nivel consultoría). Tu foco es claridad, jerarquía visual y diseño moderno ejecutable en PowerPoint/Canva. No decorás: diseñás para que el mensaje se entienda rápido.</div>
-<div class="mb-4"><strong class="text-neuro-blue-light">**C (CONTEXTO):**</strong><br>
-- Audiencia: <span id="out-g-aud-2" class="text-gray-500">[Audiencia]</span><br>
-- Objetivo: <span id="out-g-obj-2" class="text-gray-500">[Objetivo]</span><br>
-- Duración: <span id="out-g-dur-2" class="text-gray-500">[Minutos]</span> min<br>
-- Nivel: <span id="out-g-niv-2" class="text-gray-500">[Nivel]</span><br>
-- Tono: <span id="out-g-ton-2" class="text-gray-500">[Tono]</span><br>
-- Formato: <span id="out-g-for-2" class="text-gray-500">[Formato]</span></div>
-<div class="mb-4"><strong class="text-neuro-blue-light">**I (INSTRUCCIONES):**</strong><br>Sugerí orientación profesional de diseño y aspectos visuales para una presentación sobre <span id="out-g-tema-2" class="text-gray-500 font-bold">[TEMA]</span>.</div>
-<div class="mb-4"><strong class="text-white">PASO 0 (si falta el índice):</strong><br>Si NO te doy la lista de diapositivas:<br>1) Proponé un índice de 8–12 diapositivas (solo títulos).<br>2) Luego aplicá el diseño a ese índice.</div>
-<div class="mb-4"><strong class="text-white">REGLAS DE CALIDAD (claridad + ejecución):</strong><br>
-1) Una diapositiva = una idea central.<br>
-2) Accesibilidad: tipografía mínima 24pt; alto contraste; nunca texto largo sobre foto sin overlay.<br>
-3) No recargues: máximo 1 visual principal por diapositiva.<br>
+</div>
+<div class="bg-black/80 rounded-xl border border-white/5 p-6 font-mono text-sm text-gray-300 leading-relaxed shadow-inner overflow-x-auto">
+<div id="prompt-gamma-2">
+<div class="mb-4"><strong class="text-neuro-blue-light">**R (ROL):**</strong><br/>Eres un Director de Arte y Diseñador de Presentaciones (nivel consultoría). Tu foco es claridad, jerarquía visual y diseño moderno ejecutable en PowerPoint/Canva. No decorás: diseñás para que el mensaje se entienda rápido.</div>
+<div class="mb-4"><strong class="text-neuro-blue-light">**C (CONTEXTO):**</strong><br/>
+- Audiencia: <span class="text-gray-500" id="out-g-aud-2">[Audiencia]</span><br/>
+- Objetivo: <span class="text-gray-500" id="out-g-obj-2">[Objetivo]</span><br/>
+- Duración: <span class="text-gray-500" id="out-g-dur-2">[Minutos]</span> min<br/>
+- Nivel: <span class="text-gray-500" id="out-g-niv-2">[Nivel]</span><br/>
+- Tono: <span class="text-gray-500" id="out-g-ton-2">[Tono]</span><br/>
+- Formato: <span class="text-gray-500" id="out-g-for-2">[Formato]</span></div>
+<div class="mb-4"><strong class="text-neuro-blue-light">**I (INSTRUCCIONES):**</strong><br/>Sugerí orientación profesional de diseño y aspectos visuales para una presentación sobre <span class="text-gray-500 font-bold" id="out-g-tema-2">[TEMA]</span>.</div>
+<div class="mb-4"><strong class="text-white">PASO 0 (si falta el índice):</strong><br/>Si NO te doy la lista de diapositivas:<br/>1) Proponé un índice de 8–12 diapositivas (solo títulos).<br/>2) Luego aplicá el diseño a ese índice.</div>
+<div class="mb-4"><strong class="text-white">REGLAS DE CALIDAD (claridad + ejecución):</strong><br/>
+1) Una diapositiva = una idea central.<br/>
+2) Accesibilidad: tipografía mínima 24pt; alto contraste; nunca texto largo sobre foto sin overlay.<br/>
+3) No recargues: máximo 1 visual principal por diapositiva.<br/>
 4) Consistencia: usá 2 layouts repetibles (A y B) y 1 layout especial (portada/cierre).</div>
-<div class="mb-4"><strong class="text-white">ENTREGABLE (por cada diapositiva, en 4 ítems):</strong><br>
-1) Objetivo visual (qué se entiende en 3 segundos)<br>
-2) Layout (A / B / Especial) + estructura (ej: título arriba + 2 columnas)<br>
-3) Visual principal (qué usar) + descripción concreta (qué muestra)<br>
+<div class="mb-4"><strong class="text-white">ENTREGABLE (por cada diapositiva, en 4 ítems):</strong><br/>
+1) Objetivo visual (qué se entiende en 3 segundos)<br/>
+2) Layout (A / B / Especial) + estructura (ej: título arriba + 2 columnas)<br/>
+3) Visual principal (qué usar) + descripción concreta (qué muestra)<br/>
 4) Regla de texto (máx. palabras sugeridas) + 1 error común a evitar (distinto por tipo)</div>
-<div><strong class="text-neuro-blue-light">PACK GLOBAL (al final):</strong><br>
-1) Sistema visual:<br>
-- Paleta: base neutra + 1 color acento + 1 color alerta opcional<br>
-- Tipografías: 1 para títulos + 1 para cuerpo (máximo 2 opciones)<br>
-- Estilo de íconos: lineales o sólidos (uno solo)<br>
-- Estilo de gráficos: consistentes (mismo grosor/etiquetas/leyendas)<br>
-2) Cuándo usar cada layout:<br>
-- A: idea/definición<br>
-- B: comparación/datos<br>
-- Especial: portada, separadores, cierre<br>
+<div><strong class="text-neuro-blue-light">PACK GLOBAL (al final):</strong><br/>
+1) Sistema visual:<br/>
+- Paleta: base neutra + 1 color acento + 1 color alerta opcional<br/>
+- Tipografías: 1 para títulos + 1 para cuerpo (máximo 2 opciones)<br/>
+- Estilo de íconos: lineales o sólidos (uno solo)<br/>
+- Estilo de gráficos: consistentes (mismo grosor/etiquetas/leyendas)<br/>
+2) Cuándo usar cada layout:<br/>
+- A: idea/definición<br/>
+- B: comparación/datos<br/>
+- Especial: portada, separadores, cierre<br/>
 3) Checklist final (5 ítems) para validar que quedó moderno y claro.</div>
-                </div>
-              </div>
-              <div class="mt-8 flex justify-end">
-                <button onclick="copyToClipboard('prompt-gamma-2', this)" 
-                        class="btn-cyber flex items-center justify-center gap-3 bg-neuro-blue-light/10 border border-neuro-blue-light text-neuro-blue-light hover:bg-neuro-blue-light hover:text-white font-orbitron text-xs font-bold py-3 px-8 rounded-xl transition-all w-full sm:w-auto">
-                  <i data-lucide="copy" class="w-4 h-4"></i>
-                  <span>COPIAR PROMPT</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-    </div>
-
-  </main>
-
-  <!-- Botón Volver Arriba -->
-  <button id="scrollToTopBtn" onclick="scrollToTop()" class="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-neuro-blue text-white shadow-lg border border-white/20 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none hover:bg-white hover:text-neuro-blue">
-    <i data-lucide="arrow-up" class="w-6 h-6"></i>
-  </button>
-
-  <!-- Footer -->
-  <footer class="glass-panel border-b-0 border-x-0 rounded-t-3xl py-12 mt-12 bg-black/60">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      
-      <!-- AVISO LEGAL FOOTER -->
-      <div class="border-b border-white/10 pb-8 mb-8">
-          <p class="text-[10px] text-gray-500 max-w-3xl mx-auto leading-relaxed">
+</div>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="btn-cyber flex items-center justify-center gap-3 bg-neuro-blue-light/10 border border-neuro-blue-light text-neuro-blue-light hover:bg-neuro-blue-light hover:text-white font-orbitron text-xs font-bold py-3 px-8 rounded-xl transition-all w-full sm:w-auto" onclick="copyToClipboard('prompt-gamma-2', this)">
+<i class="w-4 h-4" data-lucide="copy"></i>
+<span>COPIAR PROMPT</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Botón Volver Arriba -->
+<button class="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-neuro-blue text-white shadow-lg border border-white/20 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none hover:bg-white hover:text-neuro-blue" id="scrollToTopBtn" onclick="scrollToTop()">
+<i class="w-6 h-6" data-lucide="arrow-up"></i>
+</button>
+<!-- Footer -->
+<footer class="glass-panel border-b-0 border-x-0 rounded-t-3xl py-12 mt-12 bg-black/60">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<!-- AVISO LEGAL FOOTER -->
+<div class="border-b border-white/10 pb-8 mb-8">
+<p class="text-[10px] text-gray-500 max-w-3xl mx-auto leading-relaxed">
               El uso del material de estudio proporcionado es puramente académico y se colocan a disposición en ocasión de la Diplomatura sobre: <strong class="text-gray-400">Inteligencia Artificial para el ejercicio profesional</strong>.
-              <br><br>
+              <br/><br/>
               En ciertos casos, se incluyen fragmentos de libros y papers que cuentan con protección de derechos intelectuales de acuerdo a la ley 11723, de los cuales está prohibida su divulgación a título personal o de la cursada.
           </p>
-      </div>
-
-      <div class="flex justify-center gap-12 mb-8">
-        <a href="https://wa.me/5491139225199" target="_blank" class="group flex flex-col items-center gap-3 transition-transform duration-300 hover:-translate-y-2">
-            <img src="https://img.icons8.com/color/96/whatsapp--v1.png" width="48" height="48" alt="WhatsApp" class="drop-shadow-2xl">
-            <span class="text-[10px] font-orbitron text-gray-500 group-hover:text-neuro-green transition-colors uppercase tracking-widest">WhatsApp</span>
-        </a>
-        <a href="mailto:piavanesa11@gmail.com" target="_blank" class="group flex flex-col items-center gap-3 transition-transform duration-300 hover:-translate-y-2">
-             <div class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full border border-white/20 group-hover:bg-neuro-blue/20 group-hover:border-neuro-blue transition-colors">
-                <i data-lucide="mail" class="w-6 h-6 text-gray-400 group-hover:text-neuro-blue-light transition-colors"></i>
-             </div>
-             <span class="text-[10px] font-orbitron text-gray-500 group-hover:text-neuro-blue-light transition-colors uppercase tracking-widest">Email</span>
-        </a>
-      </div>
-      <div class="text-gray-600 text-xs font-inter border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p>MAYOR VANESA PIA © 2026. Material exclusivo.</p>
-        <p class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neuro-green"></span>Sección Inteligencia de Montañana "San Rafael"</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Toast -->
-  <div id="toast" class="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-neuro-green text-black px-6 py-3 rounded-xl shadow-[0_0_30px_rgba(154,255,95,0.4)] flex items-center gap-3 z-50 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none border border-white/20">
-    <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-    <span class="font-orbitron font-bold text-sm tracking-wide">COPIADO AL PORTAPAPELES</span>
-  </div>
-
-  <!-- Plantilla oculta para PDF - ACTUALIZADA CON TODOS LOS BLOQUES -->
-  <div id="pdf-template" style="display: none; background: white; color: black; padding: 40px; font-family: 'Inter', sans-serif;">
-     <!-- Header con Logo Oficial -->
-     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #2100E5; padding-bottom: 20px; margin-bottom: 40px;">
-        <div style="display: flex; align-items: center; gap: 15px;">
-           <img src="https://raw.githubusercontent.com/neurotechsoluciones-design/neurotech-assets/d40e800d52607451a69ec394b84db98fc36a8d82/logo_%20Neurotech_soluciones.png" 
-                alt="Logo" style="width: 80px; height: 80px; object-fit: contain;" crossorigin="anonymous">
-           <div>
-              <h1 style="margin: 0; font-size: 20px; color: black; font-weight: 800; letter-spacing: 1px;">NEUROTECH SOLUCIONES</h1>
-              <p style="margin: 0; font-size: 12px; color: #2100E5; font-weight: bold; text-transform: uppercase;">Cursos y Capacitaciones</p>
-           </div>
-        </div>
-        <div style="text-align: right;">
-           <p style="margin: 0; font-size: 12px; color: gray;">Guía Completa de Recursos</p>
-           <p style="margin: 0; font-size: 12px; color: gray;">San Rafael, Mendoza</p>
-        </div>
-     </div>
-
-     <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 30px; text-align: center; color: #2100E5;">RECURSOS EXCLUSIVOS</h2>
-
-     <!-- BLOQUE 1 NUEVO -->
-     <div style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-         <h3 style="background: #000; color: #9AFF5F; display: inline-block; padding: 5px 15px; border-radius: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px;">BLOQUE 1: INGENIERÍA DE PROMPT</h3>
-         
-         <div class="pdf-no-break">
-            <h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">Fase 1: El Arte de Pedir</h4>
-            <div id="pdf-content-fase1" style="background: #f4f4f4; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
-         </div>
-
-         <div class="pdf-no-break">
-            <h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">Fase 3: Ejemplo Práctico Comparativo</h4>
-            <div id="pdf-content-fase3" style="background: #f4f4f4; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
-         </div>
-     </div>
-
-     <!-- BLOQUE 2 -->
-     <div style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-         <h3 style="background: #000; color: #2100E5; display: inline-block; padding: 5px 15px; border-radius: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px;">BLOQUE 2: NOTEBOOK LM (R.C.I.)</h3>
-         
-         <div class="pdf-no-break">
-            <h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">1. Investigación Académica</h4>
-            <div id="pdf-content-nb-1" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
-         </div>
-
-         <div class="pdf-no-break">
-            <h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">2. Prompt Maestro (Análisis de Datos)</h4>
-            <div id="pdf-content-nb-2" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
-         </div>
-
-         <div class="pdf-no-break">
-            <h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">3. El Analista de "Líneas Invisibles"</h4>
-            <div id="pdf-content-nb-3" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
-         </div>
-
-         <div class="pdf-no-break">
-            <h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">4. Simplificación (Jubilados)</h4>
-            <div id="pdf-content-nb-4" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
-         </div>
-         
-         <div class="pdf-no-break">
-            <h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">5. Pensamiento Crítico (Estudiantes)</h4>
-            <div id="pdf-content-nb-5" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
-         </div>
-     </div>
-
-     <!-- BLOQUE 3 - AGREGADO AL PDF -->
-     <div style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-         <h3 style="background: #000; color: #fff; display: inline-block; padding: 5px 15px; border-radius: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px;">BLOQUE 3: PRESENTACIONES (GAMMA APP)</h3>
-         
-         <div class="pdf-no-break">
-            <h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">Arquitecto de Presentaciones</h4>
-            <div id="pdf-content-gamma-1" style="background: #f4f4f4; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
-         </div>
-
-         <div class="pdf-no-break">
-            <h4 style="font-size: 14px; font-weight: bold; color: #2100E5; margin-bottom: 10px;">Director de Arte</h4>
-            <div id="pdf-content-gamma-2" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
-         </div>
-     </div>
-     
-     <!-- AVISO LEGAL PDF -->
-     <div style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 15px; text-align: justify; font-size: 9px; color: #666; line-height: 1.4;">
-        <p style="margin-bottom: 5px;">
+</div>
+<div class="flex justify-center gap-12 mb-8">
+<a class="group flex flex-col items-center gap-3 transition-transform duration-300 hover:-translate-y-2" href="https://wa.me/5491139225199" target="_blank">
+<img alt="WhatsApp" class="drop-shadow-2xl" height="48" src="https://img.icons8.com/color/96/whatsapp--v1.png" width="48"/>
+<span class="text-[10px] font-orbitron text-gray-500 group-hover:text-neuro-green transition-colors uppercase tracking-widest">WhatsApp</span>
+</a>
+<a class="group flex flex-col items-center gap-3 transition-transform duration-300 hover:-translate-y-2" href="mailto:piavanesa11@gmail.com" target="_blank">
+<div class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full border border-white/20 group-hover:bg-neuro-blue/20 group-hover:border-neuro-blue transition-colors">
+<i class="w-6 h-6 text-gray-400 group-hover:text-neuro-blue-light transition-colors" data-lucide="mail"></i>
+</div>
+<span class="text-[10px] font-orbitron text-gray-500 group-hover:text-neuro-blue-light transition-colors uppercase tracking-widest">Email</span>
+</a>
+</div>
+<div class="text-gray-600 text-xs font-inter border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p>MAYOR VANESA PIA © 2026. Material exclusivo.</p>
+<p class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neuro-green"></span>Sección Inteligencia de Montañana "San Rafael"</p>
+</div>
+</div>
+</footer>
+<!-- Toast -->
+<div class="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-neuro-green text-black px-6 py-3 rounded-xl shadow-[0_0_30px_rgba(154,255,95,0.4)] flex items-center gap-3 z-50 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none border border-white/20" id="toast">
+<i class="w-5 h-5" data-lucide="check-circle-2"></i>
+<span class="font-orbitron font-bold text-sm tracking-wide">COPIADO AL PORTAPAPELES</span>
+</div>
+<!-- Plantilla oculta para PDF - ACTUALIZADA CON TODOS LOS BLOQUES -->
+<div id="pdf-template" style="display: none; background: white; color: black; padding: 40px; font-family: 'Inter', sans-serif;">
+<!-- Header con Logo Oficial -->
+<div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #2100E5; padding-bottom: 20px; margin-bottom: 40px;">
+<div style="display: flex; align-items: center; gap: 15px;">
+<img alt="Logo" crossorigin="anonymous" src="https://raw.githubusercontent.com/neurotechsoluciones-design/neurotech-assets/d40e800d52607451a69ec394b84db98fc36a8d82/logo_%20Neurotech_soluciones.png" style="width: 80px; height: 80px; object-fit: contain;"/>
+<div>
+<h1 style="margin: 0; font-size: 20px; color: black; font-weight: 800; letter-spacing: 1px;">NEUROTECH SOLUCIONES</h1>
+<p style="margin: 0; font-size: 12px; color: #2100E5; font-weight: bold; text-transform: uppercase;">Cursos y Capacitaciones</p>
+</div>
+</div>
+<div style="text-align: right;">
+<p style="margin: 0; font-size: 12px; color: gray;">Guía Completa de Recursos</p>
+<p style="margin: 0; font-size: 12px; color: gray;">San Rafael, Mendoza</p>
+</div>
+</div>
+<h2 style="font-size: 24px; font-weight: bold; margin-bottom: 30px; text-align: center; color: #2100E5;">RECURSOS EXCLUSIVOS</h2>
+<!-- BLOQUE 1 NUEVO -->
+<div style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+<h3 style="background: #000; color: #9AFF5F; display: inline-block; padding: 5px 15px; border-radius: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px;">BLOQUE 1: ESTRUCTURAS BASE</h3>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">01. Personalización Simple</h4>
+<div id="pdf-content-1" style="background: #f4f4f4; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">02. Ingeniería de Prompt</h4>
+<div id="pdf-content-fase1" style="background: #f4f4f4; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">03. Ejemplo Práctico R.C.I.</h4>
+<div id="pdf-content-fase3" style="background: #f4f4f4; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">GPT Creador de Prompt</h4>
+<p style="font-size: 11px; line-height: 1.5; color: #1a1a1a;">Recurso recomendado para transformar ideas desordenadas en prompts claros. Enlace: https://chatgpt.com/g/g-69dd19b515a0819196d6f16012970538-creador-de-prompt</p>
+</div>
+</div>
+<!-- BLOQUE 2 -->
+<div style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+<h3 style="background: #000; color: #2100E5; display: inline-block; padding: 5px 15px; border-radius: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px;">BLOQUE 2: NOTEBOOK LM (R.C.I.)</h3>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">1. Investigación Académica</h4>
+<div id="pdf-content-nb-1" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">2. Prompt Maestro (Análisis de Datos)</h4>
+<div id="pdf-content-nb-2" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">3. El Analista de "Líneas Invisibles"</h4>
+<div id="pdf-content-nb-3" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">4. Simplificación (Jubilados)</h4>
+<div id="pdf-content-nb-4" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">5. Pensamiento Crítico (Estudiantes)</h4>
+<div id="pdf-content-nb-5" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+</div>
+<!-- BLOQUE 3 - AGREGADO AL PDF -->
+<div style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+<h3 style="background: #000; color: #fff; display: inline-block; padding: 5px 15px; border-radius: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px;">BLOQUE 3: PRESENTACIONES (GAMMA APP)</h3>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: black; margin-bottom: 10px;">Arquitecto de Presentaciones</h4>
+<div id="pdf-content-gamma-1" style="background: #f4f4f4; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+<div class="pdf-no-break">
+<h4 style="font-size: 14px; font-weight: bold; color: #2100E5; margin-bottom: 10px;">Director de Arte</h4>
+<div id="pdf-content-gamma-2" style="background: #f0f4ff; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 11px; line-height: 1.4;"></div>
+</div>
+</div>
+<!-- AVISO LEGAL PDF -->
+<div style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 15px; text-align: justify; font-size: 9px; color: #666; line-height: 1.4;">
+<p style="margin-bottom: 5px;">
             El uso del material de estudio proporcionado es puramente académico y se colocan a disposición en ocasión de la Capacitación sobre: <strong>Inteligencia Artificial para el ejercicio profesional en el ámbito educativo</strong>.
         </p>
-        <p>
+<p>
             En ciertos casos, se incluyen fragmentos de libros y papers que cuentan con protección de derechos intelectuales de acuerdo a la ley 11723, de los cuales está prohibida su divulgación a título personal o de la capacitación.
         </p>
-     </div>
-
-     <div style="margin-top: 20px; text-align: center; font-size: 10px; color: gray;">
+</div>
+<div style="margin-top: 20px; text-align: center; font-size: 10px; color: gray;">
         NeuroTech Soluciones © 2026. Todos los derechos reservados.
      </div>
-  </div>
-
-  <script>
+</div>
+<script>
     lucide.createIcons();
 
     // === Typewriter Logic ===
@@ -1317,6 +1231,9 @@
         btn.classList.add('loading');
         
         // Bloque 1 Nuevo
+        if(document.getElementById('pdf-content-1') && document.getElementById('prompt-content-1')) {
+            document.getElementById('pdf-content-1').innerHTML = document.getElementById('prompt-content-1').innerHTML;
+        }
         document.getElementById('pdf-content-fase1').innerHTML = document.getElementById('prompt-content-fase1').innerHTML;
         document.getElementById('pdf-content-fase3').innerHTML = document.getElementById('prompt-content-fase3').innerHTML;
 
