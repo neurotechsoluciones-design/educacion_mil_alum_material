@@ -175,37 +175,29 @@
       box-shadow: 0 0 10px #9AFF5F;
     }
 
-    /* ESTILOS PDF CORREGIDOS */
+    /* ESTILOS PDF CORREGIDOS
+       Esta sección copia la lógica del archivo de referencia que sí descargaba bien:
+       la plantilla PDF permanece oculta y solo se muestra temporalmente para html2pdf.
+       No se clona, no se monta en una capa fija y no se fuerza una vista superpuesta. */
     .pdf-no-break { page-break-inside: avoid; break-inside: avoid; margin-bottom: 20px; }
     #pdf-template strong { color: #2100E5; }
     #pdf-template h1, #pdf-template h2, #pdf-template h3 { font-family: 'Orbitron', sans-serif; }
-
-    /* Forzar colores oscuros para legibilidad en PDF (Fondo Blanco) */
-    #pdf-template [id^="pdf-content-"] * {
-        color: #1a1a1a !important; 
-        text-shadow: none !important;
-    }
-    #pdf-template [id^="pdf-content-"] strong, 
+    #pdf-template [id^="pdf-content-"] * { color: #1a1a1a !important; text-shadow: none !important; }
+    #pdf-template [id^="pdf-content-"] strong,
     #pdf-template [id^="pdf-content-"] b,
-    #pdf-template [id^="pdf-content-"] .font-bold {
-        color: #2100E5 !important; 
-    }
+    #pdf-template [id^="pdf-content-"] .font-bold { color: #2100E5 !important; }
     #pdf-template [id^="pdf-content-"] .text-neuro-green,
     #pdf-template [id^="pdf-content-"] .text-neuro-blue-light,
-    #pdf-template [id^="pdf-content-"] .text-neuro-blue {
-        color: #2100E5 !important; 
-    }
-    /* Estilos específicos para el JSON en PDF */
-    #pdf-template .json-key { color: #008000 !important; font-weight: bold; } /* Verde oscuro para keys */
-    #pdf-template .json-string { color: #A31515 !important; } /* Rojo oscuro para strings */
-
+    #pdf-template [id^="pdf-content-"] .text-neuro-blue { color: #2100E5 !important; }
+    #pdf-template .json-key { color: #008000 !important; font-weight: bold; }
+    #pdf-template .json-string { color: #A31515 !important; }
     #pdf-template [id^="pdf-content-"] .bg-white\/5,
     #pdf-template [id^="pdf-content-"] .bg-black\/80,
     #pdf-template [id^="pdf-content-"] .bg-neuro-dark\/95 {
-        background-color: transparent !important; 
+        background-color: transparent !important;
         border: none !important;
     }
-    
+
     .cursor-bar {
       display: inline-block;
       width: 4px;
@@ -270,9 +262,18 @@
 <p class="text-gray-400 max-w-lg mx-auto text-sm leading-relaxed mb-8">
         Curso de IA aplicada a la educación: recursos, estructuras y prompts listos para usar.
       </p>
-<button class="group relative inline-flex items-center gap-3 px-8 py-3 bg-white/5 border border-white/10 text-gray-200 font-orbitron font-bold text-sm rounded-xl hover:bg-neuro-green hover:text-black hover:border-neuro-green transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_30px_rgba(154,255,95,0.6)] backdrop-blur-md" onclick="downloadPDF(this)">
-<i class="w-5 h-5 group-hover:scale-110 transition-transform" data-lucide="file-down"></i>
-<span>DESCARGAR GUÍA PDF</span>
+<button class="group relative inline-flex items-center gap-3 px-5 py-3 bg-white/5 border border-white/10 text-gray-200 font-orbitron font-bold text-xs rounded-xl hover:bg-neuro-green hover:text-black hover:border-neuro-green transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_30px_rgba(154,255,95,0.6)] backdrop-blur-md" onclick="downloadPDF(this)">
+<svg class="w-7 h-7 group-hover:scale-110 transition-transform flex-shrink-0" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+<path d="M7 3h12l6 6v20H7V3z" fill="#ff4b26"/>
+<path d="M19 3v6h6" fill="#ffb09c"/>
+<path d="M10 23c4.4-5.3 6.4-10.2 6.7-15.2 1.1 5.8 2.9 9.6 5.3 11.5-4.6-.6-8.5.4-12 3.7z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.1 22.2c-1.7 1.3-3.2 1.9-3.8 1.2-.5-.6.7-1.8 2.7-2.7M16.9 8.2c-.5-2.1-.3-3.4.5-3.5.8-.1 1.1 1.4.8 3.6M21 19.1c2 .3 3.2.9 3 1.7-.2.7-1.8.7-4.1-.1" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+<text x="16" y="27" text-anchor="middle" fill="#fff" font-size="5" font-family="Arial, sans-serif" font-weight="700">PDF</text>
+</svg>
+<span class="flex flex-col items-start leading-tight text-left">
+<span>DESCARGAR CONTENIDO VIRTUAL</span>
+<span class="text-[10px] text-gray-400 group-hover:text-black/70">GUÍA PDF GENERADA DESDE ESTA PÁGINA</span>
+</span>
 <span class="absolute right-3 opacity-0 group-[.loading]:opacity-100 group-[.loading]:right-4 transition-all">
 <i class="w-4 h-4 animate-spin" data-lucide="loader-2"></i>
 </span>
@@ -955,7 +956,7 @@
 <span class="font-orbitron font-bold text-sm tracking-wide">COPIADO AL PORTAPAPELES</span>
 </div>
 <!-- Plantilla oculta para PDF - ACTUALIZADA CON TODOS LOS BLOQUES -->
-<div id="pdf-template" style="display: none; background: white; color: black; padding: 40px; font-family: 'Inter', sans-serif;">
+<div id="pdf-template" style="display: none; background: white; color: black; padding: 40px; margin: 0; font-family: 'Inter', Arial, sans-serif; box-sizing: border-box; overflow: visible;">
 <!-- Header con Logo Oficial -->
 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #2100E5; padding-bottom: 20px; margin-bottom: 40px;">
 <div style="display: flex; align-items: center; gap: 15px;">
@@ -1226,52 +1227,94 @@
         updateFields(2);
     }
 
-    // PDF Optimizado para evitar cortes e incluir TODOS los bloques
+    // PDF Optimizado para A4.
+    // No captura la página visible. Usa una plantilla limpia, fija y no responsive.
     function downloadPDF(btn) {
-        btn.classList.add('loading');
-        
-        // Bloque 1 Nuevo
-        if(document.getElementById('pdf-content-1') && document.getElementById('prompt-content-1')) {
-            document.getElementById('pdf-content-1').innerHTML = document.getElementById('prompt-content-1').innerHTML;
-        }
-        document.getElementById('pdf-content-fase1').innerHTML = document.getElementById('prompt-content-fase1').innerHTML;
-        document.getElementById('pdf-content-fase3').innerHTML = document.getElementById('prompt-content-fase3').innerHTML;
+        const originalBtnHTML = btn ? btn.innerHTML : '';
 
-        // Bloque 2 (NotebookLM)
-        document.getElementById('pdf-content-nb-1').innerHTML = document.getElementById('prompt-nb-1').innerHTML;
-        document.getElementById('pdf-content-nb-2').innerHTML = document.getElementById('prompt-nb-2').innerHTML;
-        document.getElementById('pdf-content-nb-3').innerHTML = document.getElementById('prompt-nb-3').innerHTML;
-        document.getElementById('pdf-content-nb-4').innerHTML = document.getElementById('prompt-nb-4').innerHTML;
-        document.getElementById('pdf-content-nb-5').innerHTML = document.getElementById('prompt-nb-5').innerHTML;
-
-        // Bloque 3 (Gamma App)
-        if(document.getElementById('prompt-gamma-1')) {
-            document.getElementById('pdf-content-gamma-1').innerHTML = document.getElementById('prompt-gamma-1').innerHTML;
-        }
-        if(document.getElementById('prompt-gamma-2')) {
-            document.getElementById('pdf-content-gamma-2').innerHTML = document.getElementById('prompt-gamma-2').innerHTML;
-        }
-
-        const element = document.getElementById('pdf-template');
-        element.style.display = 'block';
-
-        const opt = {
-          margin:       0.4, 
-          filename:     'NeuroTech_Guia_Completa.pdf',
-          image:        { type: 'jpeg', quality: 0.98 },
-          html2canvas:  { 
-              scale: 2, 
-              useCORS: true,
-              scrollY: 0 
-          },
-          pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] },
-          jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        const finishLoading = () => {
+            if (btn) {
+                btn.classList.remove('loading');
+                btn.disabled = false;
+                btn.innerHTML = originalBtnHTML;
+                if (window.lucide) lucide.createIcons();
+            }
         };
 
-        html2pdf().set(opt).from(element).save().then(() => {
-            element.style.display = 'none';
-            btn.classList.remove('loading');
-        });
+        const copyHTML = (sourceId, targetId) => {
+            const source = document.getElementById(sourceId);
+            const target = document.getElementById(targetId);
+            if (source && target) target.innerHTML = source.innerHTML;
+        };
+
+        if (btn) {
+            btn.classList.add('loading');
+            btn.disabled = true;
+        }
+
+        try {
+            if (typeof html2pdf === 'undefined') {
+                throw new Error('No cargó html2pdf.js. Revisá la conexión o el CDN.');
+            }
+
+            // Bloque 1
+            copyHTML('prompt-content-1', 'pdf-content-1');
+            copyHTML('prompt-content-fase1', 'pdf-content-fase1');
+
+            const rciTarget = document.getElementById('pdf-content-fase3');
+            if (rciTarget) {
+                rciTarget.innerHTML = `
+                  <div style="line-height:1.5;">
+                    <p><strong>R - ROL:</strong><br>Define desde qué perspectiva debe responder la IA: docente, especialista, tutor, diseñador instruccional, asesor pedagógico o el rol que necesites.</p>
+                    <p><strong>C - CONTEXTO:</strong><br>Explica la situación: audiencia, edad, nivel, objetivo, materia, duración, formato de clase y condiciones de aplicación.</p>
+                    <p><strong>I - INSTRUCCIÓN:</strong><br>Indica exactamente qué debe producir la IA y en qué formato: tabla, plan, rúbrica, actividad, explicación, evaluación o secuencia.</p>
+                    <p><strong>Ejemplo:</strong><br>Actúa como docente de secundaria especializado en tecnología educativa. El plan es para estudiantes de 15 años sin conocimientos previos. Diseña una clase de 40 minutos con objetivo, actividad práctica y cierre reflexivo.</p>
+                  </div>`;
+            }
+
+            // Bloque 2: NotebookLM
+            copyHTML('prompt-nb-1', 'pdf-content-nb-1');
+            copyHTML('prompt-nb-2', 'pdf-content-nb-2');
+            copyHTML('prompt-nb-3', 'pdf-content-nb-3');
+            copyHTML('prompt-nb-4', 'pdf-content-nb-4');
+            copyHTML('prompt-nb-5', 'pdf-content-nb-5');
+
+            // Bloque 3: Gamma App
+            if (typeof updateGammaPrompts === 'function') updateGammaPrompts();
+            copyHTML('prompt-gamma-1', 'pdf-content-gamma-1');
+            copyHTML('prompt-gamma-2', 'pdf-content-gamma-2');
+
+            const element = document.getElementById('pdf-template');
+            if (!element) throw new Error('No se encontró la plantilla PDF.');
+
+            // Misma estrategia que el código de referencia: mostrar la plantilla real,
+            // generar desde ese elemento y volver a ocultarla. No se usa clon ni capa fija.
+            const previousDisplay = element.style.display;
+            element.style.display = 'block';
+
+            const opt = {
+                margin: 0.4,
+                filename: 'NeuroTech_IA_Aplicada_a_la_Educacion_A4.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(element).save().then(() => {
+                element.style.display = previousDisplay || 'none';
+                finishLoading();
+            }).catch((error) => {
+                element.style.display = previousDisplay || 'none';
+                console.error(error);
+                alert('No se pudo generar el PDF. Revisá consola del navegador.');
+                finishLoading();
+            });
+        } catch (error) {
+            console.error(error);
+            alert(error.message || 'No se pudo generar el PDF.');
+            finishLoading();
+        }
     }
   </script>
 </body>
